@@ -26,10 +26,14 @@
   #card .card p {
     padding: 0 0 25px 800px;
   }
+  #card .card h1 {
+    width: 50%;
+    padding: 70px 0 18px 350px;
+  }
 }
 @media (max-width: 1280px) {
   #card .card h1 {
-    padding: 60px 0 25px 260px;
+    padding: 40px 0 25px 280px;
     width: 60%;
   }
 }
