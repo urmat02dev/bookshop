@@ -16,8 +16,7 @@
         font-weight: 900;
         font-size: 61px;
         color: #FDFCF7;
-        width: 80%;
-
+        width: 30%;
       }
 
       p {
@@ -94,11 +93,34 @@
 
 }
 
+@media (max-width: 1280px) {
+  #hero .hero .words h1 {
+    width: 80%;
+  }
+  #hero .hero .words p {
+    width: 65%;
+  }
+  #hero .hero .logo .font2 {
+    top: 105px;
+  }
+  #hero .hero .logo .btn {
+    top: 480px;
+    margin: 0 0 0 -17px;
+    padding: 7px 12px;
+  }
+  #hero .hero .logo {
+    left: -80px;
+  }
 
+
+
+
+
+}
 
 @media (max-width: 1200px) {
   #hero .hero .words h1 {
-    width: 80%;
+    width: 90%;
   }
   #hero .hero .words p {
     width: 75%;
