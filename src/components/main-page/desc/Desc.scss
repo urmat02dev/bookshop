@@ -1,0 +1,131 @@
+#card{
+  background: #F8F4E4;
+  .card{
+    background: #161718;
+    border-radius: 20px;
+    h1{
+      font-family: 'Jost',sans-serif;
+      font-weight: 900;
+      font-size: 30px;
+      color: white;
+      width: 100%;
+      letter-spacing: 2px;
+      padding: 70px 0 18px 200px;
+    }
+    p{
+      font-family: 'Jost',sans-serif;
+      font-weight: 350;
+      font-size: 34px;
+      color: white;
+      padding: 0 0 25px 700px;
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  #card .card p {
+    padding: 0 0 25px 800px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #card .card h1 {
+    width: 70%;
+  }
+  #card .card p {
+    padding: 0 0 25px 700px;
+    font-size: 30px;
+  }
+  }
+
+@media (max-width: 1024px) {
+  #card .card h1 {
+    width: 55%;
+  }
+  #card .card p {
+    padding: 0 0 40px 600px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  #card .card h1 {
+    width: 60%;
+    padding: 50px 0 20px 130px;
+  }
+  #card .card p {
+    padding: 0 0 40px 400px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #card .card h1 {
+    width: 60%;
+    font-size: 25px;
+  }
+  #card .card p {
+    padding: 0 0 40px 300px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  #card .card h1 {
+    width: 50%;
+    font-size: 20px;
+  }
+  #card .card p {
+    padding: 0 0 40px 250px;
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 414px) {
+  #card .card h1 {
+    font-size: 18px;
+    padding: 40px 0 20px 100px;
+  }
+  #card .card p {
+    padding: 0 0 40px 200px;
+    font-size: 15px;
+  }
+
+
+}
+
+@media (max-width: 375px) {
+  card .card p {
+    padding: 0 0 40px 170px;
+    font-size: 15px;
+  }
+  #card .card h1 {
+    padding: 40px 0 20px 90px;
+  }
+}
+
+@media (max-width: 360px) {
+  #card .card h1 {
+    padding: 40px 0 20px 90px;
+    width: 55%;
+  }
+
+}
+
+@media (max-width: 320px) {
+  #card .card h1 {
+    padding: 40px 0 20px 70px;
+    width: 60%;
+  }
+  #card .card p {
+    padding: 0 0 40px 180px;
+    font-size: 13px;
+  }
+}
+
+
+
