@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./Search.scss"
 import {BsSearch} from "react-icons/bs";
 const Search = ({count}) => {
