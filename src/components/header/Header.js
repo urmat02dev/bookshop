@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import "./Header.scss"
-import logo from '../../assets/img/logo.svg'
+import logo from "../../assets/img/logo.svg"
 import {NavLink} from "react-router-dom";
-import Search from "../pages/search/Search";
 import {BsSearch} from "react-icons/bs";
 const Header = () => {
     const [count, setCount] = useState(false)
@@ -28,7 +27,7 @@ const Header = () => {
                        <div className="header--center__end--one">
                            <select>
                                <option>ENG</option>
-                               <orption>RUS</orption>
+                               <option>RUS</option>
                                <option>KYR</option>
                            </select>
                        </div>
