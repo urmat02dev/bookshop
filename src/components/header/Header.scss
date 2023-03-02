@@ -1,12 +1,12 @@
 #header {
   background: #F8F4E4;
+  height: 170px;
   .header {
-
     &--start {
       text-align: center;
       height: 100px;
      img {
-       width: 200px;
+       width: 250px;
      }
     }
     &--center {
@@ -14,6 +14,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      &__close {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.43);
+      }
       &__start {
         button {
           display: flex;
@@ -37,13 +45,36 @@
       }
       &__end {
         display: flex;
+        align-items: center;
         &--one {
           select {
-
+            background: none;
+            outline: none;
+            width: 60px;
+            border: none;
           }
         }
         &--two {
-          margin-left: 15px;
+          &__close {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.43);
+          }
+          &__user {
+            background: #000;
+            width: 40px;
+            height: 40px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border-radius: 20px;
+          }
         }
       }
     }
