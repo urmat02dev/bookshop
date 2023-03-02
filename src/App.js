@@ -1,7 +1,6 @@
 import './App.scss';
 import MainPage from "./components/main-page/MainPage";
 import {Routes,Route} from "react-router-dom";
-import About from "./components/main-page/about/About";
 import Basket from "./components/pages/basket/Basket";
 import Catalog from "./components/pages/catalog/Catalog";
 import Contacts from "./components/pages/contacts/Contacts";

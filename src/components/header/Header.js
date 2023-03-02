@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import "./Header.scss"
 import "../pages/search/Search.scss"
 import logo from '../../assets/img/logo.svg'
+import logo from "../../assets/img/logo.svg"
 import {NavLink} from "react-router-dom";
-import Search from "../pages/search/Search";
 import {BsSearch} from "react-icons/bs";
 import {FiUser} from "react-icons/fi";
 import Regin from "../pages/Sign-in/Regin";
@@ -64,7 +64,6 @@ const Header = () => {
                 </div>
             </div>
         </div>
-        {/*<SignUp/>*/}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./Search.scss"
 import {CiSearch} from "react-icons/ci";
 const Search = ({count}) => {
