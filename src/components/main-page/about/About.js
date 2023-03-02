@@ -1,8 +1,12 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import "./About.scss"
 import about from "../../../assets/img/about.png"
+import {useTranslation} from "react-i18next";
+
 const About = () => {
   const [viewMore, setViewMore] = useState(false)
+
+  const {t, i18n} = useTranslation()
   return (
     <div id={"about"}>
       <div className="container">
@@ -12,7 +16,7 @@ const About = () => {
             <p>MIDNIGHTS</p>
           </div>
           <div className="about--desc">
-            <h1>Best Book Shop In Your Home Town</h1>
+            <h1>{t("about-h1")}</h1>
             <h4>Lörem ipsum lov nypohorende, pon transpol. Losarade nipede ekobel. Ogisk bel, bevis dumpstra nev. Pabektig trekrod mipong neloligen. Gövis pronade. Du kan vara drabbad. </h4>
             <h4>Lörem ipsum lov nypohorende, pon transpol. Losarade nipede ekobel. Ogisk bel, bevis dumpstra nev. Pabektig trekrod mipong neloligen. Gövis pronade. Du kan vara drabbad. </h4>
             {
