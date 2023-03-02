@@ -17,6 +17,10 @@
           display: flex;
           align-items: center;
           flex-direction: column;
+          .map{
+            width: 300px;
+            height: 190px;
+          }
           .shop-img{
             width: 65%;
           }
@@ -24,7 +28,7 @@
             font-family: 'Jost',sans-serif;
             font-weight: 500;
             font-size: 18px;
-            padding: 10px 0 50px 0;
+            padding: 15px 0 50px 0;
             color: #FFFFFF;
           }
         }
@@ -38,7 +42,6 @@
     }
   }
 }
-
 
 
 @media (max-width: 1536px) {
@@ -61,17 +64,20 @@
 
 @media (max-width: 1366px) {
   #stores .stores h1 {
-    padding: 60px 0 40px 540px;
+    padding: 60px 0 40px 530px;
+  }
+  #stores .stores p {
+    padding: 30px 0 100px 530px;
   }
 
 }
 
 @media (max-width: 1280px) {
   #stores .stores h1 {
-    padding: 60px 0 40px 490px;
+    padding: 60px 0 50px 475px;
   }
   #stores .stores p {
-    padding: 30px 0 100px 500px;
+    padding: 30px 0 100px 490px;
   }
 
 }
@@ -97,11 +103,19 @@
 }
 
 @media (max-width: 1024px) {
+  #stores .stores .block .cards .shop .map {
+    width: 250px;
+    height: 170px;
+  }
+  #stores .stores .block .cards .shop h3 {
+    font-size: 15px;
+    padding: 15px 0 50px 0;
+  }
   #stores .stores h1 {
-    padding: 60px 0 40px 380px;
+    padding: 60px 0 40px 370px;
   }
   #stores .stores p {
-    padding: 30px 0 100px 390px;
+    padding: 30px 0 100px 380px;
   }
 
 }
@@ -142,6 +156,10 @@
 }
 
 @media (max-width: 576px) {
+  #stores .stores .block .cards .shop .map {
+    width: 220px;
+    height: 150px;
+  }
   #stores .stores h1 {
     padding: 60px 0 40px 217px;
     font-size: 15px;
@@ -158,6 +176,10 @@
 }
 
 @media (max-width: 450px) {
+  #stores .stores .block .cards .shop .map {
+    width: 180px;
+    height: 120px;
+  }
   #stores .stores h1 {
     padding: 50px 0 30px 170px;
     font-size: 12px;
@@ -173,6 +195,13 @@
 }
 
 @media (max-width: 414px) {
+  #stores .stores h1 {
+    padding: 50px 0 30px 140px;
+  }
+  #stores .stores .block .cards .shop .map {
+    width: 160px;
+    height: 100px;
+  }
   #stores .stores .cards {
     flex-direction: column;
   }
@@ -194,6 +223,12 @@
 }
 
 @media (max-width: 390px) {
+  #stores .stores p {
+    padding: 20px 0 80px 125px;
+  }
+  #stores .stores h1 {
+    padding: 50px 0 30px 130px;
+  }
   #stores .stores .block .cards .shop .shop-img {
     width: 80%;
   }
@@ -204,12 +239,19 @@
 }
 
 @media (max-width: 380px) {
-  #stores .stores .block {
-    flex-direction: column;
+
+  #stores .stores .block .cards .shop h3 {
+    font-size: 13px;
   }
   #stores .stores h1 {
-    padding: 50px 0 30px 130px;
-    font-size: 18px;
+    padding: 50px 0 30px 120px;
+  }
+  #stores .stores .block .cards .shop .map {
+    width: 250px;
+    height: 150px;
+  }
+  #stores .stores .block {
+    flex-direction: column;
   }
   #stores .stores p {
     padding: 20px 0 80px 130px;
@@ -226,7 +268,7 @@
 
 @media (max-width: 360px) {
   #stores .stores h1 {
-    padding: 50px 0 30px 116px;
+    padding: 50px 0 30px 105px;
     font-size: 20px;
   }
   #stores .stores p {
@@ -243,6 +285,7 @@
   #stores .stores p {
     padding: 0 0 50px 100px;
   }
+
 
 
 }
