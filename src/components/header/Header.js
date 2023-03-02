@@ -3,8 +3,14 @@ import "./Header.scss"
 import logo from "../../assets/img/logo.svg"
 import {NavLink} from "react-router-dom";
 import {BsSearch} from "react-icons/bs";
+import {useTranslation} from "react-i18next";
+
 const Header = () => {
-    const [count, setCount] = useState(false)
+  const [count, setCount] = useState(false)
+  const {t, i18n} = useTranslation()
+  const changeLanguage = (language) =>{
+    i18n.changeLanguage(language);
+  };
   return (
     <div id='header'>
         <div className="container">
@@ -25,14 +31,14 @@ const Header = () => {
                     </div>
                     <div className="header--center__end">
                        <div className="header--center__end--one">
-                           <select>
-                               <option>ENG</option>
-                               <option>RUS</option>
-                               <option>KYR</option>
+                           <select onChange={(e) => changeLanguage(e.target.value.toLowerCase())}>
+                               <option>EN</option>
+                               <option>RU</option>
+                               <option>KG</option>
                            </select>
                        </div>
                        <div className="header--center__end--two">
-                           <div>maik</div>
+                            <div>Mike</div>
                        </div>
                     </div>
                 </div>
