@@ -1,0 +1,42 @@
+#search {
+  position: fixed;
+  transition: .4s;
+  left: 27%;
+  top: 45%;
+  animation: show-search 1s forwards;
+  .search{
+    &--div {
+      position: relative;
+      input {
+        width: 600px;
+        height: 80px;
+        outline: none;
+        border: none;
+        padding-left: 20%;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+      }
+      ::placeholder {
+        color: black;
+      }
+      &--icon {
+        font-size: 30px;
+        position: absolute;
+        top: 24px;
+        right: 0;
+        bottom: 0;
+        left: 9%;
+      }
+    }
+  }
+}
+@keyframes show-search {
+  0% {
+    transform: translateY(-400px);
+    transition: .4s;
+    }
+  100% {
+    transform: translateY(0px);
+  }
+}

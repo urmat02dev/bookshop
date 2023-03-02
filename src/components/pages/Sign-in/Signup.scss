@@ -1,0 +1,148 @@
+#sign{
+  position: fixed;
+  left: 31%;
+  top: 14%;
+  right: 0;
+  bottom: 0;
+  //animation: login 1s forwards;
+  .sign {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background: #F8F4E4;
+    text-align: center;
+    padding: 0  10px;
+    &--block {
+      height: 120px;
+    }
+    &--sign {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        margin: 0 20px;
+        font-weight: 600;
+        font-size: 23px;
+        color: black;
+        cursor: pointer;
+      }
+    }
+
+    &--regin {
+      padding-top: 30px;
+      input {
+        width: 72%;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 13px;
+        outline: none;
+        color: white;
+        border: none;
+        background: #000;
+      }
+      ::placeholder {
+        color: white;
+      }
+    }
+
+    &--regin1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 8px;
+      input {
+        width: 72%;
+        margin: 15px 0;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 13px;
+        outline: none;
+        color: white;
+        border: none;
+        background: #000;
+      }
+      ::placeholder {
+        color: white;
+      }
+    }
+
+    &--regin2 {
+      input {
+        width: 72%;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 13px;
+        outline: none;
+        color: white;
+        border: none;
+        background: #000;
+      }
+      ::placeholder {
+        color: white;
+      }
+    }
+
+    &--password {
+      width: 361px;
+      margin-left: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 15px;
+      &__checkbox {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        input {
+          width: 15px;
+          height: 15px;
+          background: #000;
+          cursor: pointer;
+        }
+        h5 {
+          color: black;
+          font-size: 14px;
+          padding-left: 10px;
+        }
+      }
+      &__forgot {
+        color: black;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+
+    &--btn {
+      button {
+        padding: 13px 40px;
+        border-radius: 20px;
+        outline: none;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        background: #000;
+        border: none;
+        cursor: pointer;
+        transform: scaleY(1);
+        transition: .4s;
+        &:hover {
+          background: #ffffff;
+          box-shadow: #56b253;
+          color: #000;
+          transform: scaleY(1.1);
+          transition: .4s;
+        }
+      }
+    }
+    &--read {
+      img {
+        position: absolute;
+        left:0;
+        bottom: 0;
+        width: 150px;
+      }
+    }
+
+  }
+}
