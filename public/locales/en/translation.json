@@ -1,9 +1,27 @@
 {
+
   "about":{
     "title": "Best Book Shop In Your Home Town",
     "btn": "Read More",
     "btn-close": "Close"
   }
 
+  "hero": {
+    "h1": "What Book Are You Looking For?",
+    "p": "Not Sure What To Read Next? Explore Our Catalog",
+    "btn": "Order now"
+  },
+  "desc": {
+    "h1": "I'd rather read some schedule or catalog than not read anything at all",
+    "p": "Someret Soem"
+  },
+  "bookstores": {
+    "h3-1": "Mederova 9",
+    "h3-2": "Chui 19 street",
+    "h3-3": "Abdurahmanova 25",
+    "h3-4": "Manasa street 97",
+    "h3-5": "Bokonbaeva 9",
+    "h3-6": "Kievskaya 110"
+  }
 
 }

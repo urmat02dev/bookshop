@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Bookstores.scss"
+import {useTranslation} from "react-i18next";
 const Bookstores = () => {
+  const {t,i18n} =useTranslation()
   return (
     <div id="stores">
       <div className="container">
@@ -15,7 +17,7 @@ const Bookstores = () => {
                       width="90%" height="100%" allowFullScreen="" loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <h3>Mederova 9 </h3>
+                <h3>{t("bookstores.h3-1")}</h3>
               </div>
               <div className="shop">
                 <div className="map">
@@ -24,7 +26,7 @@ const Bookstores = () => {
                       width="90%" height="100%"  allowFullScreen="" loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <h3>Chuy 19 street</h3>
+                <h3>{t("bookstores.h3-2")}</h3>
               </div>
               <div className="shop">
                 <div className="map">
@@ -33,7 +35,7 @@ const Bookstores = () => {
                       width="90%" height="100%" allowFullScreen="" loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <h3>Abdrahmanova 25</h3>
+                <h3>{t("bookstores.h3-3")}</h3>
               </div>
             </div>
             <div className="cards">
@@ -44,7 +46,7 @@ const Bookstores = () => {
                       width="90%" height="100%" allowFullScreen="" loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <h3>Manasa street 97</h3>
+                <h3>{t("bookstores.h4")}</h3>
               </div>
               <div className="shop">
                 <div className="map">
@@ -53,7 +55,7 @@ const Bookstores = () => {
                       width="90%" height="100%" allowFullScreen="" loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <h3>Bokonbaeva 9</h3>
+                <h3>{t("bookstores.h3-5")}</h3>
               </div>
               <div className="shop">
                 <div className="map">
@@ -62,7 +64,7 @@ const Bookstores = () => {
                       width="90%" height="100%" allowFullScreen="" loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <h3>Kievskaya 110</h3>
+                <h3>{t("bookstores.h3-6")}</h3>
               </div>
             </div>
           </div>
