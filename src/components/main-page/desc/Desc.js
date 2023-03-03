@@ -1,13 +1,15 @@
 import React from 'react';
 import "./Desc.scss"
+import {useTranslation} from "react-i18next";
 
 const Desc = () => {
+    const {t,i18n} =useTranslation()
     return (
         <div id="card">
             <div className="container">
                 <div className="card">
-                    <h1>I'd rather read some schedule or catalog than not read anything at all.</h1>
-                    <p>Someret Soem</p>
+                    <h1>{t("desc.h1")}</h1>
+                    <p>{t("desc.p")}</p>
                 </div>
             </div>
         </div>
