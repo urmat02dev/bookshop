@@ -1,5 +1,9 @@
 {
-  "about-h1": "Best Book Shop In Your Home Town"
+  "about":{
+    "title": "Best Book Shop In Your Home Town",
+    "btn": "Read More",
+    "btn-close": "Close"
+  }
 
 
 }
