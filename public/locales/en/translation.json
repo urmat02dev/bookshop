@@ -1,5 +1,11 @@
 {
-  "about-h1": "Best Book Shop In Your Home Town",
+
+  "about":{
+    "title": "Best Book Shop In Your Home Town",
+    "btn": "Read More",
+    "btn-close": "Close"
+  }
+
   "hero": {
     "h1": "What Book Are You Looking For?",
     "p": "Not Sure What To Read Next? Explore Our Catalog",
@@ -17,4 +23,5 @@
     "h3-5": "Bokonbaeva 9",
     "h3-6": "Kievskaya 110"
   }
+
 }

@@ -16,7 +16,7 @@ const About = () => {
             <p>MIDNIGHTS</p>
           </div>
           <div className="about--desc">
-            <h1>{t("about-h1")}</h1>
+            <h1>{t("about.title")}</h1>
             <h4>Lörem ipsum lov nypohorende, pon transpol. Losarade nipede ekobel. Ogisk bel, bevis dumpstra nev. Pabektig trekrod mipong neloligen. Gövis pronade. Du kan vara drabbad. </h4>
             <h4>Lörem ipsum lov nypohorende, pon transpol. Losarade nipede ekobel. Ogisk bel, bevis dumpstra nev. Pabektig trekrod mipong neloligen. Gövis pronade. Du kan vara drabbad. </h4>
             {
@@ -28,7 +28,7 @@ const About = () => {
             }
             <button onClick={() => setViewMore(!viewMore)} style={{
               background: viewMore ? "red" : "#F54C0B"
-            }}>{viewMore ? "Close" : "Read More"}</button>
+            }}>{viewMore ? `${t("about.btn-close")}` : `${t("about.btn")}`}</button>
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import './Regin.scss'
+import './Login.scss'
 import logo from '../../../assets/img/logo.svg'
 import read from '../../../assets/img/image 18.png'
-const Regin = () => {
+const Login = () => {
     return (
         <div id='login'>
             <div className="container">
@@ -45,4 +45,4 @@ const Regin = () => {
     );
 };
 
-export default Regin;
+export default Login;
