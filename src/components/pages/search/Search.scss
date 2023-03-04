@@ -4,6 +4,7 @@
   left: 27%;
   top: 45%;
   animation: show-search 1s forwards;
+  z-index: 999;
   .search{
     &--div {
       position: relative;
