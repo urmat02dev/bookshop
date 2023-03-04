@@ -1,4 +1,8 @@
 {
+  "header": {
+    "catalog": "Catalog",
+    "payments": "Payments"
+  },
   "about-h1": "Best Book Shop In Your Home Town"
 
 

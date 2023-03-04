@@ -5,9 +5,7 @@ const Search = ({count}) => {
   return (
       <>
           {
-                <div id='search' style={{
-                    // top:!count ? "-1000px" : "40%"
-                }}>
+                <div id='search'>
                   <div className="container">
                       <div className="search">
                           <div className='search--div'>
