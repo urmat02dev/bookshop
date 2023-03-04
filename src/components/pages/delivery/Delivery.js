@@ -4,17 +4,19 @@ import {AiOutlineMail} from "react-icons/ai";
 import {SlBasket} from "react-icons/sl";
 import {BsTruck} from "react-icons/bs";
 import {TbPlayerTrackNext} from "react-icons/tb";
+import {useTranslation} from "react-i18next";
 
 const Delivery = () => {
+    const {t,i18n} =useTranslation()
     return (
         <div id="order">
             <div className="container">
                 <div className="order">
-                   <h1> Shipping methods</h1>
+                   <h1>{t("delivery.h1")}</h1>
                     <div className="block">
                         <div className="basket1">
-                            <h2><SlBasket className="icon"/> Pickup from the store</h2>
-                            <p className="text">The processing and execution time of the order is one day. After confirming the readiness of your order, you can pick it up from 10:00 to 22:00. The shelf life of the order is 7 days.</p>
+                            <h2><SlBasket className="icon"/> {t("delivery.h2")}</h2>
+                            <p className="text">{t("delivery.p")}</p>
                         </div>
                         <div className="basket2">
                             <h2><BsTruck className="icon"/> Delivery by courier in Bishkek</h2>
