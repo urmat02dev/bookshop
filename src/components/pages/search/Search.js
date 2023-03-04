@@ -6,7 +6,7 @@ const Search = ({count}) => {
       <>
           {
                 <div id='search' style={{
-                    // top:!count ? "-1000px" : "40%"
+                    top:count ? "-1000px" : "40%"
                 }}>
                   <div className="container">
                       <div className="search">
