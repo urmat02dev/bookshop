@@ -2,7 +2,7 @@ import React from 'react';
 import "./Bookstores.scss"
 import {useTranslation} from "react-i18next";
 const Bookstores = () => {
-  const {t,i18n} =useTranslation()
+  const {t} =useTranslation()
   return (
     <div id="stores">
       <div className="container">
@@ -46,7 +46,7 @@ const Bookstores = () => {
                       width="90%" height="100%" allowFullScreen="" loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <h3>{t("bookstores.h4")}</h3>
+                <h3>{t("bookstores.h3-4")}</h3>
               </div>
               <div className="shop">
                 <div className="map">

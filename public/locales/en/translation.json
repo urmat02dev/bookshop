@@ -1,5 +1,6 @@
 {
-  "about": {
+
+  "about":{
     "title": "Best Book Shop In Your Home Town",
     "btn": "Read More",
     "btn-close": "Close"
@@ -34,6 +35,7 @@
     "h2-4": "Delivery in the Kyrgyz region and throughout the CIS",
     "p-4": "Convenient delivery to all cities of Kyrgyzstan. When placing an order, specify your locality, and we will offer all available delivery options, indicating the terms and cost."
   }
+
 }
 
 
