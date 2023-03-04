@@ -7,7 +7,7 @@ const Bookstores = () => {
     <div id="stores">
       <div className="container">
         <div className="stores">
-          <h1>Bookstores</h1>
+          <h1>{t("bookstores.h1")}</h1>
           <div className="block">
             <div className="cards">
               <div className="shop">
@@ -69,7 +69,7 @@ const Bookstores = () => {
             </div>
           </div>
 
-          <p>Click to view on the map</p>
+          <p>{t("bookstores.p")}</p>
         </div>
       </div>
     </div>
