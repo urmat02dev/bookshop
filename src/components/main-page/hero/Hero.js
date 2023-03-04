@@ -4,7 +4,7 @@ import logos from "../../../assets/img/Vector (1).png"
 import books from "../../../assets/img/books.png"
 import {useTranslation} from "react-i18next";
 const Hero = () => {
-    const {t,i18n} =useTranslation()
+    const {t} =useTranslation()
     return (
         <div id="hero">
             <div className="container">
