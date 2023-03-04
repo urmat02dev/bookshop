@@ -19,7 +19,7 @@ const Delivery = () => {
                             <p className="text">{t("delivery.p")}</p>
                         </div>
                         <div className="basket2">
-                            <h2><BsTruck className="icon"/> Delivery by courier in Bishkek</h2>
+                            <h2><BsTruck className="icon"/> {t("delivery.h2-2")}</h2>
                             <p className="text2"> Delivery is carried out every day from 10:00 to 21:00. The delivery time is determined automatically when choosing  carrier <br/>company.
                                <br/> • The cost of delivery in Bishkek is 200 soms.
                                <br/> • When ordering from 3000 soms — for free.</p>
