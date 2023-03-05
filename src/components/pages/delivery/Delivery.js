@@ -34,8 +34,8 @@ const Delivery = () => {
                             <p className="text4"> {t("delivery.p-4")}</p>
                         </div>
                     </div>
-                    <h4>Delivery abroad</h4>
-                    <h4>Orders are delivered by DHL.</h4>
+                    <h4>{t("delivery.h4")}</h4>
+                    <h4>{t("delivery.h4-2")}</h4>
                 </div>
             </div>
         </div>
