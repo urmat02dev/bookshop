@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from "../../../assets/img/logo.svg";
 import read from "../../../assets/img/image 18.png";
 import './Signup.scss'
 import {Route} from "react-router-dom";
+import axios from "axios";
 
 const SignUp = () => {
+    // const [login, setLogin] = useState([])
+    // const Login = async () => {
+    //     const url = await axios.post(`https://motionbookshop.herokuapp.com/accounts/register/`)
+    //     const {data} = await url
+    //     await setLogin(data.results)
+    //
+    // }
+    // console.log(Login)
+
+
     return (
         <div id='sign'>
             <div className="container">
