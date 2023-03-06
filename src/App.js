@@ -5,7 +5,7 @@ import Basket from "./components/pages/basket/Basket";
 import Catalog from "./components/pages/catalog/Catalog";
 import Contacts from "./components/pages/contacts/Contacts";
 import Delivery from "./components/pages/delivery/Delivery";
-import Search from "./components/pages/search/Search";
+import Search from "./components/header/search/Search";
 import DetailPage from "./components/pages/detail-page/DetailPage";
 import Payments from "./components/pages/payments/Payments";
 
