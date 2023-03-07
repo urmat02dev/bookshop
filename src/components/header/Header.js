@@ -20,18 +20,23 @@ const Header = () => {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
+    console.log(menu)
     return (
         <div id='header'>
             <div className="container">
                 <div className="header">
                     <div className='header--menu'>
-                        <div className="header--menu__adap" onClick={() => setMenu(true)}>
+                        <div className="header--menu__adap" onClick={() => setMenu(!menu)}>
                             <div className="header--menu__adap--one"></div>
                             <div className="header--menu__adap--two"></div>
                             <div className="header--menu__adap--one"></div>
                         </div>
-                        <div style={{display: menu ? "block" : "none"}}>
-                            <Menu menu={menu} setMenu={setMenu}/>
+
+                        <div >
+                            {
+                                menu ?  <Menu menu={menu} setMenu={setMenu}/> : ""
+                            }
+
                         </div>
 
                         <div className="header--menu__start1">
@@ -52,6 +57,7 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
+
 
                     <div className="header--start">
                         <NavLink to={'/'}><img src={logo} alt=""/></NavLink>

@@ -1,11 +1,13 @@
-.burger {
+#burger {
   position: fixed;
   left: 0 ;
   top: 0;
   right: 0;
   bottom: 0;
-  animation: menu 1s forwards;
-  z-index: 99;
+  width: 100%;
+  height: 700px;
+  transition: all 1s ease;
+  z-index: 1;
   .burger--menu {
     text-align: center;
     display: flex;
@@ -17,13 +19,29 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(16, 4, 4, 0.45);
+    transition: all 1s ease;
+    background: rgba(5, 7, 5, 0.45);
     backdrop-filter: blur(5px);
-    z-index: 999;
+
     &__bg {
-      width: 400px;
+      width: 600px;
       height: 500px;
       background: #F8F4E4;
+      position: relative;
+      animation: jan 0.9s ease;
+      @keyframes jan {
+        0%{
+          transform: translateX(-400px);
+        }
+      }
+
+      &--none {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 35px;
+        font-weight: 700;
+      }
       p{
         padding: 10px 0;
         color: black;
@@ -35,22 +53,22 @@
         justify-content: center;
       }
       img {
-        width: 250px;
+        width: 200px;
       }
     }
   }
 }
-@keyframes menu {
-  0% {
-    transform: translateX(-400px);
-    transition: .4s;
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@media (max-width: 576px) {
-  .burger {
+  //@keyframes menu {
+  //  0% {
+  //    transform: translateX(-400px);
+  //    transition: .4s;
+  //  }
+  //  100% {
+  //    transform: translateX(0px);
+  //  }
+  //}
+@media (max-width: 768px) {
+  #burger {
     position: fixed;
     left: 0 ;
     top: 0;
@@ -69,11 +87,10 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background: rgba(16, 4, 4, 0.45);
-      backdrop-filter: blur(5px);
-      z-index: 999;
+      //background: rgba(16, 4, 4, 0.45);
+      //backdrop-filter: blur(5px);
       &__bg {
-        width: 300px;
+        width: 400px;
         height: 500px;
         background: #F8F4E4;
         p{
@@ -86,7 +103,145 @@
           justify-content: center;
         }
         img {
-          width: 150px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  #burger {
+    .burger--menu {
+      &__bg {
+        height: 450px;
+        width: 400px;
+        bottom: 1%;
+        left: 20px;
+        p {
+          font-size: 23px;
+        }
+        img {
+          width: 165px;
+          padding-top: 10px;
+        }
+        hr {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 451px) {
+  #burger {
+    .burger--menu {
+      &__bg {
+        height: 420px;
+        width: 300px;
+        bottom: 1%;
+        left: 20px;
+        p {
+          font-size: 17px;
+        }
+        img {
+          width: 165px;
+          padding-top: 20px;
+        }
+        hr {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  #burger {
+    .burger--menu {
+      &__bg {
+        height: 420px;
+        width: 280px;
+        bottom: 1%;
+        left: 20px;
+        p {
+          font-size: 16px;
+        }
+        img {
+          width: 165px;
+          padding-top: 20px;
+        }
+        hr {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #burger {
+    .burger--menu {
+      &__bg {
+        height: 400px;
+        width: 280px;
+        bottom: 10%;
+        left: 20px;
+        p {
+          font-size: 16px;
+        }
+        img {
+          width: 165px;
+          padding-top: 20px;
+        }
+        hr {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  #burger {
+    .burger--menu {
+      &__bg {
+        height: 400px;
+        width: 250px;
+        bottom: 10%;
+        left: 20px;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 145px;
+          padding-top: 20px;
+        }
+        hr {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  #burger {
+    .burger--menu {
+      &__bg {
+        height: 400px;
+        width: 250px;
+        bottom: 10%;
+        left: 20px;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 145px;
+          padding-top: 20px;
+        }
+        hr {
+          padding-top: 20px;
         }
       }
     }
