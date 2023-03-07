@@ -36,7 +36,7 @@ const Header = () => {
                     </div>
                     <div className="header--center__end">
                        <div className="header--center__end--one">
-                           <select onChange={(e) => changeLanguage(e.target.value.toLowerCase())} defaultValue={valueLang}>
+                           <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={valueLang}>
                              <option value={"en"}>EN</option>
                               <option value={"ru"}>RU</option>
                                <option value={"kg"}>KG</option>

@@ -1,0 +1,201 @@
+
+@media (max-width: 1366px) {
+  #genre{
+    background: #F8F4E4;
+
+    .genre{
+      background: #F8F4E4;
+      &--title{
+        margin: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        h1{
+          font-weight: 500;
+          font-size: 40px;
+        }
+        button{
+          color: #3970FA;
+          font-size: 22px;
+          border: none;
+          background: transparent;
+        }
+      }
+      &--img{
+        position: relative;
+        margin-bottom: 100px;
+        border: none;
+        &--one{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+          }
+          p{
+            position: absolute;
+            left: 1.5%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 19px;
+            font-weight: 600;
+          }
+        }
+        &--two{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+          }
+          p{
+            position: absolute;
+            left: 25%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 21px;
+            font-weight: 600;
+          }
+        }
+        &--three{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+          }
+          p{
+            position: absolute;
+            left: 6%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 21px;
+            font-weight: 600;
+          }
+        }
+        &--four{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+          }
+          p{
+            position: absolute;
+            left: 2%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        &--five{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+          }
+          p{
+            position: absolute;
+            left: 1.5%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 19px;
+            font-weight: 600;
+          }
+        }
+        &--six{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+          }
+          p{
+            position: absolute;
+            left: 25%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 21px;
+            font-weight: 600;
+          }
+        }
+        &--seven{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+
+          }
+          p{
+            position: absolute;
+            left: 21%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 21px;
+            font-weight: 700;
+          }
+        }
+        &--eight{
+          position: relative;
+
+          img{
+            width: 180px;
+            height: 280px;
+            z-index: 1;
+          }
+          p{
+            position: absolute;
+            left: 15%;
+            top: 45%;
+            color: rgba(255, 255, 255, 0.98);
+            font-size: 21px;
+            font-weight: 900;
+            z-index: 5;
+          }
+        }
+        &--nine{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+            z-index: 1;
+          }
+          p{
+            position: absolute;
+            left: 3%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 21px;
+            font-weight: 600;
+            z-index: 3;
+          }
+        }
+        &--ten{
+          position: relative;
+          img{
+            width: 180px;
+            height: 280px;
+            z-index: 1;
+          }
+          p{
+            position: absolute;
+            left: 5%;
+            top: 45%;
+            color: #FFFFFF;
+            font-size: 21px;
+            font-weight: 900;
+            z-index: 3;
+          }
+        }
+
+      }
+
+      .slick-prev:before{
+        color: red;
+        font-size: 25px;
+      }
+      .slick-next:before{
+        color: red;
+        font-size: 25px;
+      }
+    }
+
+  }
+}
