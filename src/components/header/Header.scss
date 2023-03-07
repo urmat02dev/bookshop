@@ -49,14 +49,19 @@
         display: flex;
         align-items: center;
         &--one {
-          button{
+          select{
             background: none;
             outline: none;
             width: 60px;
             border: none;
+            option{
+              background: #000;
+              color: white;
+            }
           }
         }
         &--close {
+          width: 100%;
           position: fixed;
           z-index: 99;
           top: 0;
@@ -89,7 +94,7 @@
       position: relative;
       top: 8px;
       &__adap {
-
+        z-index: 50;
         &--one {
           width: 25px;
           height: 2px;
@@ -114,6 +119,7 @@
           left: 0;
           right: 0;
           background: rgba(0, 0, 0, 0.43);
+          width: 100%;
         }
         &--search {
           z-index: 9;
@@ -180,7 +186,9 @@
 }
 
 @media (max-width: 576px) {
-
+  #header .header--menu__start1--close {
+    //width: 68%;
+  }
 }
 
 @media (max-width: 450px) {

@@ -145,6 +145,7 @@
   }
   #stores .stores .block .cards {
     flex-direction: column;
+    align-items: center;
   }
   #stores .stores .block{
     display: flex;
@@ -249,6 +250,7 @@
   #stores .stores .block .cards .shop .map {
     width: 250px;
     height: 150px;
+    text-align: center;
   }
   #stores .stores .block {
     flex-direction: column;
@@ -285,8 +287,9 @@
   #stores .stores p {
     padding: 0 0 50px 100px;
   }
-
-
+  #stores .stores .cards {
+    align-items: center;
+  }
 
 }
 
