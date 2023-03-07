@@ -5,6 +5,7 @@
   right: 0;
   bottom: 0;
   animation: login 1s forwards;
+  z-index: 99;
   .login {
     position: relative;
     width: 450px;
@@ -76,6 +77,9 @@
       }
     }
     &--btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       button {
         padding: 13px 40px;
         border-radius: 20px;

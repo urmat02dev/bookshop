@@ -5,7 +5,6 @@
     "btn": "Read More",
     "btn-close": "Close"
   },
-
   "hero": {
     "h1": "What Book Are You Looking For?",
     "p": "Not Sure What To Read Next? Explore Our Catalog",
@@ -29,8 +28,16 @@
     "h1": "Shipping methods",
     "h2": "Pickup from the store",
     "p": "The processing and execution time of the order is one day. After confirming the readiness of your order, you can pick it up from 10:00 to 22:00. The shelf life of the order is 7 days.",
-  "h2-2": "Delivery by courier in Bishkek",
-    "p-2": "Delivery is carried out every day from 10:00 to 21:00. The delivery time is determined automatically when choosing carrier company.• The cost of delivery in Bishkek is 200 soms.• When ordering from 3000 soms — for free."
+    "h2-2": "Delivery by courier in Bishkek",
+    "p-2": "Delivery is carried out every day from 10:00 to 21:00. The delivery time is determined automatically when choosing a carrier company. • The cost of delivery in Bishkek is 200 soms. • When ordering from 3000 soms — for free.",
+    "h2-3": "Points of delivery of orders",
+    "p-3": "Delivery to one of the points of delivery of orders of the companies Beber logistics, Pyaterochka stores and others. The terms and cost of delivery are determined depending on the location of the pick-up point. Delivery time from 2 working days.",
+    "h2-4": "Delivery in the Kyrgyzstan and the CIS",
+    "p-4": "Convenient delivery to all cities of Kyrgyzstan. When placing an order, specify your locality, and we will offer all available delivery options, indicating the terms and cost.",
+    "h4": "Delivery abroad",
+    "h4-2": "Orders are delivered by DHL"
+
+
 
   }
 

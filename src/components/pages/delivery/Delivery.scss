@@ -118,10 +118,11 @@
     width: 50%;
   }
   #order .order .block .basket2 .text2 {
-    width: 80%;
+    width: 50%;
+    padding: 0 0 0 150px;
   }
   #order .order .block2 .basket4 .text4 {
-    width: 81%;
+    width: 70%;
   }
   #order .order .block2 .basket3 .text3 {
     width: 55%;
@@ -129,7 +130,8 @@
     padding: 0 0 100px 50px;
   }
   #order .order .block2 .basket4 h2 {
-    padding: 30px 0 20px 90px;
+    padding: 60px 0 20px 10px;
+    width: 60%;
   }
 
   #order .order .block2 .basket3 h2 {
@@ -143,16 +145,21 @@
     width: 100%;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 40px 10px;
+    padding: 30px 0 40px 80px;
     width: 400px;
   }
-  #order .order .block2 .basket4 h2 {
-    padding: 30px 0 20px 0;
-    width: 80%;
+  #order .order .block .basket2 {
+    padding: 0 0 3px 50px;
   }
 
 
 
+}
+
+@media (max-width: 1400px) {
+  #order .order h1 {
+    padding: 60px 0 30px 500px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -160,61 +167,71 @@
     padding: 60px 0 30px 500px;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 40px 0;
+    padding: 0 0 40px 50px;
+  }
+  #order .order .block .basket1 h2 {
+    padding: 30px 0 40px 20px;
+    width: 70%;
   }
 }
 
 @media (max-width:1280px ){
   #order .order h1 {
-    padding: 60px 1px 20px 460px;
+    padding: 60px 1px 20px 440px;
   }
   #order .order .block .basket1 .text {
     width: 60%;
   }
   #order .order .block .basket2 .text2 {
-    width: 77%;
+    width: 55%;
+    padding: 0 0 17px 170px;
   }
   #order .order .block2 .basket3 .text3 {
     width: 60%;
   }
   #order .order .block2 .basket4 .text4 {
-    width: 85%;
+    width: 75%;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 20px 0;
+    padding: 40px 0 40px 80px;
+    line-height: 40px;
   }
   #order .order .block2 .basket4 h2 {
-    padding: 30px 0 20px 0;
-    text-align: center;
+    padding: 30px 90px 20px 10px;
+    text-align:center;
+    width:70%;
   }
 }
 
 @media (max-width: 1200px) {
   #order .order h1 {
-    padding: 60px 0 30px 450px;
+    padding: 60px 0 30px 420px;
   }
   #order .order .block .basket1 h2 {
     padding: 30px 0 40px 10px;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 40px 50px 0;
+    padding: 30px 40px 50px 70px;
+  }
+  #order .order .block2 .basket4 .text4 {
+    width: 76%;
   }
 
 }
 
 @media (max-width: 1140px) {
   #order .order h1 {
-    padding: 60px 0 30px 440px;
+    padding: 60px 0 30px 400px;
   }
   #order .order .block .basket2 h2 {
-    padding: 10px 0 40px 0;
+    padding: 10px 0 40px 80px;
   }
   #order .order .block2 .basket3 h2 {
     padding: 80px 0 20px 0;
   }
   #order .order .block2 .basket4 h2 {
-    padding: 30px 0 20px 0;
-    width: 90%;
+    padding: 30px 50px 20px 0;
+    width: 80%;
   }
   #order .order .block .basket1 .text {
     width: 55%;
@@ -243,18 +260,21 @@
     padding: 20px 0 20px 50px;
   }
   #order .order .block .basket1 .text {
-    width: 45%;
+    width: 60%;
   }
   #order .order .block .basket2 .text2 {
-    width: 70%;
+    width: 50%;
   }
   #order .order .block .basket2 h2 {
-    padding: 10px 0 20px 0;
-    width: 80%;
-    text-align: center;
+    padding:0 0 30px 90px;
+    width: 50%;
+    text-align: end;
+  }
+  #order .order .block .basket1 h2 {
+    width: 100%;
   }
   #order .order .block2 .basket4 h2 {
-    padding: 30px 0 30px 0;
+    padding: 70px 0 30px 0;
     width: 80%;
     text-align: center;
   }
@@ -271,9 +291,11 @@
     padding: 30px 0 40px 0;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 40px 0;
+    padding: 0 0 20px 150px;
     text-align: center;
+    line-height: 25px;
   }
+
   #order .order .block .basket3 h2 {
     padding: 30px 0 40px 80px;
   }
@@ -299,34 +321,46 @@
     font-size: 15px;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 40px 0;
+    padding: 70px 10px 20px 10px;
+    width: 70%;
     font-size: 15px;
+    text-align: end;
   }
   #order .order .block .basket2 {
-    padding: 10px 0 20px 0;
+    padding:0 0 20px 0;
   }
   #order .order .block2 .basket3 h2 {
-    padding: 80px 0 20px 0;
+    padding: 120px 0 40px 0;
     font-size: 15px;
+    width: 50%;
+    text-align: end;
   }
   #order .order .block .basket1 .text {
     font-size: 13px;
   }
   #order .order .block .basket2 .text2 {
     font-size: 13px;
+    padding: 0 100px 50px 90px;
+    line-height: 25px;
+    width: 60%;
   }
   #order .order .block2 .basket3 .text3 {
     width: 58%;
     font-size: 13px;
     line-height: 25px;
   }
+  #order .order .block2{
+    padding: 0 0 10px 0;
+  }
+
   #order .order .block2 .basket4 h2 {
-    padding: 40px 0 30px 20px;
+    padding: 60px 0 30px 20px;
     font-size: 15px;
-    width: 70%;
+    width: 60%;
+    text-align: end;
   }
   #order .order .block2 .basket4 .text4 {
-    width: 81%;
+    width: 75%;
     font-size: 13px;
     line-height: 25px;
   }
@@ -348,48 +382,52 @@
     flex-direction: column;
   }
   #order .order .block .basket1 h2 {
-    padding: 0 0 20px 0;
+    padding: 0 50px 20px 0;
     font-size: 20px;
   }
   #order .order .block .basket1 .text {
     font-size: 18px;
     width: 350px;
     text-align: center;
-    padding: 0 2px 0 0;
+    padding: 0 2px 0 30px;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 20px 0;
-    text-align: center;
+    padding: 30px 0 20px 60px;
     font-size: 20px;
+    width: 55%;
+    text-align: end;
   }
   #order .order .block .basket2 .text2 {
     font-size: 18px;
     width: 340px;
   }
   #order .order .block2 .basket3 h2 {
-    padding: 80px 0 20px 0;
+    padding: 60px 0 20px 60px;
     font-size: 20px;
   }
   #order .order .block2 .basket3 .text3 {
     width: 65%;
     font-size: 18px;
-    padding: 0 0 0 70px;
+    padding: 0 0 0 90px;
     line-height: 28px;
   }
   #order .order .block2 .basket4 h2 {
-    padding: 40px 0 30px 70px;
+    padding: 40px 0 30px 80px;
     font-size: 20px;
-    width: 290px;
+    width: 250px;
   }
   #order .order .block2 .basket4 .text4 {
     width: 65%;
     font-size: 18px;
     line-height: 25px;
-    padding: 0 0 50px 70px;
+    padding: 0 0 50px 80px;
   }
   #order .order h4 {
     padding: 0 0 20px 30px;
     font-size: 16px;
+  }
+  #order .order .block .basket2 {
+    padding: 30px 0 0 0;
   }
 }
 
@@ -410,13 +448,13 @@
     text-align: end;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 20px 0;
-    text-align: center;
+    padding: 30px 0 20px 50px;
+    text-align: end;
   }
   #order .order .block .basket2 .text2 {
     font-size: 18px;
     width: 290px;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 60px;
   }
   #order .order .block2 .basket3 h2 {
     padding: 50px 0 20px 50px;
@@ -485,6 +523,15 @@
 
 }
 
+@media (max-width: 360px) {
+  #order .order h1 {
+padding: 30px  0 40px 80px;
+  }
+  #order .order h4 {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 320px) {
   #order .order h1 {
     font-size: 20px;
@@ -498,6 +545,7 @@
   }
   #order .order .block .basket2 h2 {
     font-size: 15px;
+    padding: 20px 0 0 0;
   }
   #order .order .block2 .basket3 h2 {
     font-size: 15px;
@@ -517,10 +565,10 @@
   #order .order .block .basket2 .text2 {
     font-size: 15px;
     width: 200px;
-    padding: 0 0 0 40px;
+    padding: 0 0 35px 40px;
   }
   #order .order .block2 .basket3 .text3 {
-   padding: 0 10px 0 40px;
+    padding: 0 10px 0 40px;
   }
   #order .order .block2 .basket4 .text4 {
     width: 65%;
@@ -532,8 +580,6 @@
     padding: 20px 0 0 10px;
   }
 }
-
-
 
 
 
