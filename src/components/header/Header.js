@@ -53,6 +53,7 @@ const Header = () => {
                         </div>
                     </div>
 
+
                     <div className="header--start">
                         <NavLink to={'/'}><img src={logo} alt=""/></NavLink>
                     </div>
