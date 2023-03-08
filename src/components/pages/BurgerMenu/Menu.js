@@ -1,7 +1,10 @@
 import "./Menu.scss"
 import logo from "../../../assets/img/logo.svg"
 import {NavLink} from "react-router-dom";
-const BurgerMenu = ({burger, setBurger, menu, setMenu}) => {
+import {BiUser} from "react-icons/bi";
+import Login from "../Sign-in/Login";
+import React from "react";
+const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
 
     return (
         <>
@@ -14,7 +17,6 @@ const BurgerMenu = ({burger, setBurger, menu, setMenu}) => {
                                 left:!menu ? "-1000px" : "0",
                             }}>
                                 <div className="burger--menu__bg--none" onClick={() => setMenu(!menu)} style={{
-
                                 }}>
                                     &times;
                                 </div>
