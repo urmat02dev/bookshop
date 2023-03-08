@@ -56,6 +56,114 @@
   }
 }
 
+@media (max-width: 1401px) {
+  #search {
+    left: 25%;
+    top: 7rem;
+    .search {
+      &--div {
+        input {
+          width: 590px;
+          font-size: 22px;
+        }
+        &--icon {
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px){
+  #search {
+    left: 21%;
+    top: 5rem;
+    .search {
+      &--div {
+        input {
+          width: 590px;
+          font-size: 22px;
+        }
+        &--icon {
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px){
+  #search {
+    left: 21%;
+    top: 5rem;
+    .search {
+      &--div {
+        input {
+          width: 590px;
+          font-size: 22px;
+        }
+        &--icon {
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #search {
+    left: 19%;
+    top: 5rem;
+    .search {
+      &--div {
+        input {
+          width: 590px;
+          font-size: 22px;
+        }
+        &--icon {
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  #search {
+    left: 14%;
+    top: 5rem;
+    .search {
+      &--div {
+        input {
+          width: 590px;
+          font-size: 22px;
+        }
+        &--icon {
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #search {
+    left: 14%;
+    top: 5rem;
+    .search {
+      &--div {
+        input {
+          width: 560px;
+          font-size: 22px;
+        }
+        &--icon {
+
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   #search {
     left: 11%;
