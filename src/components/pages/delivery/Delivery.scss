@@ -321,7 +321,7 @@
     font-size: 15px;
   }
   #order .order .block .basket2 h2 {
-    padding: 70px 10px 20px 10px;
+    padding: 70px 10px 40px 10px;
     width: 70%;
     font-size: 15px;
     text-align: end;
@@ -337,12 +337,13 @@
   }
   #order .order .block .basket1 .text {
     font-size: 13px;
+    text-align: center;
   }
   #order .order .block .basket2 .text2 {
+    padding: 0 100px 20px;
+    width: 50%;
     font-size: 13px;
-    padding: 0 100px 50px 90px;
     line-height: 25px;
-    width: 60%;
   }
   #order .order .block2 .basket3 .text3 {
     width: 58%;
@@ -354,7 +355,7 @@
   }
 
   #order .order .block2 .basket4 h2 {
-    padding: 60px 0 30px 20px;
+    padding: 60px 0 30px 0;
     font-size: 15px;
     width: 60%;
     text-align: end;
@@ -363,6 +364,7 @@
     width: 75%;
     font-size: 13px;
     line-height: 25px;
+    padding: 10px 0 80px 0;
   }
   #order .order h4 {
     padding: 0 0 20px 40px;
@@ -375,14 +377,14 @@
     flex-direction: column;
   }
   #order .order h1 {
-    padding: 30px 0 40px 180px;
+    padding: 30px 0 40px 160px;
     font-size: 25px;
   }
   #order .order .block2 {
     flex-direction: column;
   }
   #order .order .block .basket1 h2 {
-    padding: 0 50px 20px 0;
+    padding: 0 50px 20px 20px;
     font-size: 20px;
   }
   #order .order .block .basket1 .text {
@@ -392,7 +394,7 @@
     padding: 0 2px 0 30px;
   }
   #order .order .block .basket2 h2 {
-    padding: 30px 0 20px 60px;
+    padding: 30px 0 20px 40px;
     font-size: 20px;
     width: 55%;
     text-align: end;
@@ -402,7 +404,7 @@
     width: 340px;
   }
   #order .order .block2 .basket3 h2 {
-    padding: 60px 0 20px 60px;
+    padding: 60px 0 20px 90px;
     font-size: 20px;
   }
   #order .order .block2 .basket3 .text3 {
@@ -438,7 +440,7 @@
   }
   #order .order .block .basket1 .text {
     font-size: 18px;
-    width: 300px;
+    width: 80%;
     text-align: center;
     padding: 0 2px 0 30px;
   }
@@ -453,28 +455,32 @@
   }
   #order .order .block .basket2 .text2 {
     font-size: 18px;
-    width: 290px;
-    padding: 0 0 0 60px;
+    width:80%;
+    padding: 0 0 0 30px;
   }
   #order .order .block2 .basket3 h2 {
-    padding: 50px 0 20px 50px;
+    padding: 50px 0 20px 30px;
     width: 55%;
     text-align: end;
   }
   #order .order .block2 .basket4 h2 {
-    padding: 40px 0 30px 30px;
-    width: 250px;
+    padding: 40px 0 30px 60px;
+    width:50%;
     text-align: end;
   }
   #order .order .block2 .basket3 .text3 {
     width: 70%;
     font-size: 18px;
-    padding: 0 0 0 70px;
+    padding: 0 0 0 50px;
     line-height: 28px;
   }
-
-
-
+  #order .order .block2 .basket4 .text4 {
+    padding: 0 0 50px 60px;
+  }
+  #order .order h4 {
+    padding: 0 0 20px 0;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -482,8 +488,8 @@
     font-size: 20px;
   }
   #order .order .block .basket1 h2 {
-    padding: 0 0 20px 20px;
-    width: 60%;
+    padding: 0 0 20px 0;
+    width: 70%;
     font-size: 17px;
     text-align: end;
   }
@@ -500,7 +506,7 @@
   #order .order .block .basket2 .text2 {
     font-size: 15px;
     width: 250px;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 20px;
   }
   #order .order .block2 .basket3 h2 {
     font-size: 17px;
@@ -516,6 +522,13 @@
   #order .order .block2 .basket4 .text4 {
     width: 65%;
     font-size: 15px;
+    line-height: 30px;
+  }
+  #order .order .block2 .basket4 h2 {
+    width: 50%;
+  }
+  #order .order h4 {
+    font-size: 12px;
   }
   #order .order h4 {
     font-size: 15px;
@@ -523,25 +536,40 @@
 
 }
 
+@media (max-width: 375px) {
+  #order .order h1 {
+    padding: 40px 0 50px 90px;
+    font-size: 24px;
+  }
+  #order .order h4 {
+    font-size: 11px;
+  }
+}
+
 @media (max-width: 360px) {
   #order .order h1 {
 padding: 30px  0 40px 80px;
+    font-size: 20px;
   }
   #order .order h4 {
     font-size: 13px;
+  }
+  #order .order .block2 .basket4 h2 {
+    width: 55%;
+    padding: 20px 10px 20px 30px;
   }
 }
 
 @media (max-width: 320px) {
   #order .order h1 {
     font-size: 20px;
-    padding: 10px 1px 20px 60px;
+    padding: 30px 1px 20px 60px;
   }
   #order .order .block .basket1 h2 {
-    padding: 20px 0 20px 30px;
-    width: 55%;
+    padding: 20px 0 20px 0;
+    width: 80%;
     font-size: 15px;
-    text-align:end;
+    text-align: end;
   }
   #order .order .block .basket2 h2 {
     font-size: 15px;
@@ -565,7 +593,7 @@ padding: 30px  0 40px 80px;
   #order .order .block .basket2 .text2 {
     font-size: 15px;
     width: 200px;
-    padding: 0 0 35px 40px;
+    padding: 15px 0 35px 40px;
   }
   #order .order .block2 .basket3 .text3 {
     padding: 0 10px 0 40px;

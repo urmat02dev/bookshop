@@ -36,9 +36,20 @@
     "p-4": "Convenient delivery to all cities of Kyrgyzstan. When placing an order, specify your locality, and we will offer all available delivery options, indicating the terms and cost.",
     "h4": "Delivery abroad",
     "h4-2": "Orders are delivered by DHL"
-
-
-
+  },
+  "genre": {
+    "h1": "Genre",
+    "btn": "See all",
+    "p1": "Autographed books",
+    "p2": "Fantasy",
+    "p3": "Children's books",
+    "p4": "Business literature",
+    "p5": "Hobbies and leisure",
+    "p6": "Religion",
+    "p7": "Publicism",
+    "p8": "Pedagogy",
+    "p9": "Self-development",
+    "p10": "Sports / fitness"
   }
 
 }

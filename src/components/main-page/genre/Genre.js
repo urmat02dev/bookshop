@@ -13,6 +13,7 @@ import genre10 from "../../../assets/img/genre10.png"
 
 import Slider from "react-slick";
 import {NavLink} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 
 const Genre = () => {
@@ -50,13 +51,14 @@ const Genre = () => {
       }
     ]
   };
+  const {t} =useTranslation()
   return (
     <div id={"genre"}>
       <div className="container">
         <div className="genre">
           <div className="genre--title">
-            <h1>Genre</h1>
-            <button>See all</button>
+            <h1>{t("genre.h1")}</h1>
+            <button>{t("genre.btn")}</button>
           </div>
           <div className="genre--img">
             <Slider {...settings}>
@@ -64,44 +66,44 @@ const Genre = () => {
               <div className="genre--img--one">
                 <NavLink to={"/catalog"}>
                   <img src={genre1} alt=""/>
-                  <p>Autographed books</p>
+                  <p>{t("genre.p1")}</p>
                 </NavLink>
               </div>
               <div className="genre--img--two">
                 <img src={genre2} alt=""/>
-                <p>Fantasy</p>
+                <p>{t("genre.p2")}</p>
               </div>
               <div className="genre--img--three">
                 <img src={genre3} alt=""/>
-                <p>Children's books</p>
+                <p>{t("genre.p3")}</p>
               </div>
               <div className="genre--img--four">
                 <img src={genre4} alt=""/>
-                <p>Business literature</p>
+                <p>{t("genre.p4")}</p>
               </div>
               <div className="genre--img--five">
                 <img src={genre5} alt=""/>
-                <p>Hobbies and leisure</p>
+                <p>{t("genre.p5")}</p>
               </div>
               <div className="genre--img--six">
                 <img src={genre6} alt=""/>
-                <p>Religion</p>
+                <p>{t("genre.p6")}</p>
               </div>
               <div className="genre--img--seven">
                 <img src={genre7} alt=""/>
-                <p>Publicizm</p>
+                <p>{t("genre.p7")}</p>
               </div>
               <div className="genre--img--eight">
                 <img src={genre8} alt=""/>
-                <p>Pedagogy </p>
+                <p>{t("genre.p8")}</p>
               </div>
               <div className="genre--img--nine">
                 <img src={genre9} alt=""/>
-                <p>Self-development</p>
+                <p>{t("genre.p9")}</p>
               </div>
               <div className="genre--img--ten">
                 <img src={genre10} alt=""/>
-                <p>Sports / fitness</p>
+                <p>{t("genre.p10")}</p>
               </div>
             </Slider>
           </div>
