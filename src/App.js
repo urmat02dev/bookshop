@@ -9,6 +9,8 @@ import Search from "./components/header/search/Search";
 import DetailPage from "./components/pages/detail-page/DetailPage";
 import Payments from "./components/pages/payments/Payments";
 
+import Login from "./components/pages/Sign-in/Login";
+
 function App() {
   return (
     <>
