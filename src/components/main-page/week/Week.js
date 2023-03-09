@@ -10,7 +10,7 @@ const Week = () => {
 
    const getBooks = async () => {
      try{
-       const url  = await axios ('https://www.googleapis.com/books/v1/volumes?q=fantasy&orderBy=newest&key=AIzaSyCV3qU8CNN7bqn6BJgpEtF2RdN16w_UJsg')
+       const url  = await axios ('https://www.googleapis.com/books/v1/volumes?q=Зажги себя! Жизнь – в движении&orderBy=newest&key=AIzaSyCV3qU8CNN7bqn6BJgpEtF2RdN16w_UJsg')
        const {data} = url
        await setBooks(data.items)
      }catch (e){
@@ -21,6 +21,7 @@ const Week = () => {
    useEffect(()=> {
      getBooks()
    },[])
+  console.log(books)
 
 
   const settings = {
@@ -37,7 +38,7 @@ const Week = () => {
     <div className="container">
       <div className="week">
 
-        <Slider {...settings}>
+
           <div>
             {
               books.map(el=> {
@@ -47,7 +48,6 @@ const Week = () => {
               })
             }
           </div>
-        </Slider>
 
       </div>
     </div>
