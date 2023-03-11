@@ -1,0 +1,87 @@
+#pay {
+  body {
+    font-family: 'Jost', sans-serif;
+  }
+
+  background: #F8F4E4;
+
+  .pay {
+
+    h1 {
+      font-weight: 500;
+      font-size: 25px;
+      text-align: center;
+      padding: 50px 0 0 0;
+    }
+
+    .page {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 0 100px 0;
+      .tittle {
+        padding: 0 20px 0 20px;
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+          width: 180%;
+          padding: 0 0 30px 0;
+        }
+
+        .words {
+          font-weight: 500;
+          font-size: 18px;
+          width: 200%;
+          padding:10px 0 30px 0;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        .word{
+          padding:40px 0;
+        }
+        .card {
+          width: 25%;
+          padding: 0 5px;
+        }
+      }
+
+      .tittle2 {
+        padding: 0 20px 0 300px;
+        h3 {
+          font-weight: 500;
+          font-size: 19px;
+        }
+
+        h4 {
+          font-weight: 500;
+          font-size: 18px;
+          width: 60%;
+          padding: 20px 0;
+        }
+        .text{
+          font-weight: 400;
+          font-size: 15px;
+          width: 95%;
+          line-height: 130%;
+        }
+        .text2{
+          font-weight: 400;
+          font-size: 15px;
+          width: 100%;
+          line-height: 130%;
+          padding: 20px 0;
+        }
+        .text3{
+          font-weight: 400;
+          font-size: 15px;
+          width: 100%;
+          line-height: 130%;
+        }
+      }
+    }
+
+  }
+}
