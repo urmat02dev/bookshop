@@ -85,3 +85,385 @@
 
   }
 }
+
+@media (max-width: 1536px) {
+  #pay .pay .page .tittle .words {
+    width: 160%;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 55%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 80%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 70%;
+  }
+  #pay .pay .page {
+    padding: 80px 0 100px 100px;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 20px 10px 300px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #pay .pay .page .tittle2 h4 {
+    width: 60%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 95%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 75%;
+    padding: 25px 0;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 90%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 20px 15px 300px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #pay .pay .page .tittle .words {
+    width: 190%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 94%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 93%;
+  }
+  #pay .pay .page .tittle h2 {
+    width: 190%;
+  }
+  #pay .pay .page {
+    padding: 80px 0 100px 50px;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 20px 0 300px;
+  }
+}
+
+@media (max-width: 1280px) {
+  #pay .pay .page .tittle2 h4 {
+    width: 65%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 105%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 100%;
+  }
+  #pay .pay .page .tittle {
+    padding:0 10px 10px 20px;
+  }
+  #pay .pay .page .tittle .words {
+    width: 195%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  #pay .pay .page .tittle h2 {
+    width: 110%;
+  }
+  #pay .pay .page .tittle .words {
+    width: 150%;
+  }
+  #pay .pay .page .tittle .word {
+    width: 150%;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 70%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 60%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 20px 10px 300px;
+  }
+}
+
+@media (max-width: 1140px) {
+  #pay .pay .page .tittle2 .text {
+    width: 80%;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 75%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 80%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 85%;
+  }
+  #pay .pay .page .tittle h2 {
+    width: 115%;
+    line-height: 180%;
+  }
+  #pay .pay .page .tittle .words {
+    width: 160%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 20px 0 300px;
+  }
+  #pay .pay .page .tittle {
+    padding: 0 10px 30px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #pay .pay .page .tittle h2 {
+    width: 150%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 50PX 20px 0 300px;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  #pay .pay .page .tittle2 {
+    padding: 50PX 20px 0 250px;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 90%;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 65%;
+  }
+  #pay .pay .page .tittle h2 {
+    width: 145%;
+    line-height: 125%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 40px 20px 0 250px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #pay .pay .page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #pay .pay .page .tittle .words {
+    width: 90%;
+  }
+  #pay .pay .page .tittle {
+    padding: 0 10px 30px 80px;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 100%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 40px 20px 0 80px;
+  }
+}
+
+@media (max-width:576px) {
+  #pay .pay .page .tittle {
+    padding: 0 10px 30px 40px;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 10px 30px 40px;
+  }
+  #pay .pay .page .tittle h2 {
+    width: 65%;
+  }
+  #pay .pay .page .tittle .words {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 80%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 80%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 70%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 84%;
+  }
+}
+
+@media (max-width:450px) {
+  #pay .pay h1 {
+    padding: 40px 0 0 5px;
+  }
+  #pay .pay .page .tittle {
+    padding: 0 10px 30px 20px;
+  }
+  #pay .pay .page .tittle h2 {
+    width: 75%;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 10px 30px 20px;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 75%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 65%;
+  }
+  #pay .pay .page .tittle {
+    padding: 0 10px 50px 20px;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 10px 0 20px;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 79%;
+  }
+}
+
+@media (max-width:400px) {
+  #pay .pay .page .tittle h2 {
+    width: 70%;
+  }
+  #pay .pay .page .tittle .words {
+    width: 87%;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 80%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 69%;
+  }
+
+}
+
+@media (max-width:390px) {
+  #pay .pay .page .tittle .words {
+    width: 91%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 82%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 72%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 80%;
+  }
+  #pay .pay .page .tittle h2 {
+    line-height: 140%;
+  }
+
+}
+
+@media (max-width:380px) {
+  #pay .pay .page .tittle .words {
+    width: 85%;
+  }
+  #pay .pay .page .tittle .word {
+    font-size: 15px;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 83%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 75%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 75%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 83%;
+  }
+  #pay .pay h1 {
+     padding: 60px 0 0 5px;
+   }
+
+}
+
+@media (max-width:360px) {
+  #pay .pay .page .tittle .words {
+    width: 74%;
+    text-align: center;
+  }
+  #pay .pay .page .tittle h2 {
+    text-align: center;
+  }
+  #pay .pay .page .tittle2 h4 {
+    text-align: center;
+  }
+  #pay .pay .page .tittle2 h3 {
+    padding: 0 0 0 40px;
+  }
+  #pay .pay .page .tittle2 {
+    padding: 0 10px 0 0;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 95%;
+  }
+  #pay .pay .page .tittle2 .text2 {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 90%;
+  }
+}
+
+@media (max-width:320px) {
+  #pay .pay h1 {
+    font-size: 20px;
+  }
+  #pay .pay .page .tittle h2 {
+  width: 80%;
+    text-align: start;
+  }
+  #pay .pay .page .tittle .words {
+    width: 85%;
+    text-align: start;
+  }
+  #pay .pay .page .tittle .word {
+    font-size: 13px;
+  }
+  #pay .pay .page .tittle .card {
+    width: 25%;
+    padding: 0 5px 0 0;
+  }
+  #pay .pay .page .tittle2 h4 {
+    width: 90%;
+  }
+  #pay .pay .page .tittle2 .text {
+    width: 85%;
+  }
+  #pay .pay .page .tittle2 .text3 {
+    width: 80%;
+  }#pay .pay .page .tittle {
+     padding: 0 10px 50px 10px;
+   }
+  #pay .pay .page .tittle2 h4 {
+    width: 80%;
+    text-align: start;
+  }
+
+}
+
+
+
+
+
