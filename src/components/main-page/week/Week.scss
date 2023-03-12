@@ -1,7 +1,32 @@
 
 #week{
+  background: #F8F4E4;
   .week{
-    display: flex;
-    flex-wrap: wrap;
+    padding: 80px 0;
+    .slick-prev:before,
+    .slick-next:before{
+      color: red;
+    }
+    &--title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 120%;
+        color: #2A2C31;
+      }
+      button{
+        width: 113px;
+        height: 44px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        color: #3970FA;
+        background: transparent;
+        border: none;
+      }
+    }
   }
 }

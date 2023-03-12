@@ -62,7 +62,6 @@ const Genre = () => {
           </div>
           <div className="genre--img">
             <Slider {...settings}>
-
               <div className="genre--img--one">
                 <NavLink to={"/catalog"}>
                   <img src={genre1} alt=""/>

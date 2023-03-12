@@ -21,7 +21,6 @@ const Header = () => {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
-    console.log(menu)
     return (
         <div id='header'>
             <div className="container">
