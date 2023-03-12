@@ -21,7 +21,6 @@ const Login = () => {
     useEffect(() => {
        setTasks([...tasks,newtTasks])
     },[])
-    console.log(newtTasks)
 
     const getValue = async () => {
         const url = await axios.post("https://motionbookshop.herokuapp.com/accounts/register/",{
