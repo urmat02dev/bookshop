@@ -17,7 +17,7 @@ const Login = () => {
         password:password,
         password_confirm:password_confirm
     }
-    console.log(username)
+
     useEffect(() => {
        setTasks([...tasks,newtTasks])
     },[])
@@ -29,7 +29,7 @@ const Login = () => {
             password: password,
             password_confirm: password_confirm
         })
-        console.log(url)
+
     }
 
 

@@ -21,7 +21,7 @@ const Week = () => {
    useEffect(()=> {
      getBooks()
    },[])
-  console.log(books)
+  console.log(books.map(el => el.id))
 
 
   let settings = {
