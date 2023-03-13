@@ -21,8 +21,7 @@ const Week = () => {
    useEffect(()=> {
      getBooks()
    },[])
-  console.log(books.map(el => el.id))
-
+  console.log(books)
 
   let settings = {
     dots: true,
@@ -58,7 +57,6 @@ const Week = () => {
       }
     ]
   };
-
   return (
 
     <div id={"week"}>
