@@ -291,7 +291,7 @@
   #detail-page .detail-page--desc2 {
     padding: 30px 200px 0 40px;
   }
-  detail-page .detail-page--desc1 h2 {
+  #detail-page .detail-page--desc1 h2 {
     font-size: 22px;
   }
 }
@@ -319,7 +319,14 @@
     padding: 10px 15px;
  font-size: 10px;
   }
-
+  #detail-page .detail-page--desc2 {
+    padding: 30px 200px 0 40px;
+  }
+  #detail-page .detail-page--img__book {
+    padding: 0 0 0 55px;
+    width: 170px;
+    height: 200px;
+  }
 }
 
 
