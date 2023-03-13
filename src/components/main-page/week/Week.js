@@ -10,9 +10,9 @@ const Week = () => {
 
    const getBooks = async () => {
      try{
-       const url  = await axios ('https://www.googleapis.com/books/v1/volumes?q=fantasy&orderBy=newest&key=AIzaSyCV3qU8CNN7bqn6BJgpEtF2RdN16w_UJsg')
+       const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
        const {data} = url
-       await setBooks(data.items)
+       await setBooks(data.results)
      }catch (e){
        console.log(e,"Error")
      }
@@ -21,34 +21,63 @@ const Week = () => {
    useEffect(()=> {
      getBooks()
    },[])
+  console.log(books.map(el => el.id))
 
 
-  const settings = {
+  let settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToShow: 7,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+
   return (
 
     <div id={"week"}>
 
     <div className="container">
+      <div className={"week--title"}>
+        <h1>Bestsellers Of The Week</h1>
+        <button>See all</button>
+      </div>
       <div className="week">
-
-        <Slider {...settings}>
-          <div>
+          <Slider {...settings}>
             {
               books.map(el=> {
 
-                return <Bookcard el={el} />
+                return <Bookcard el={el} key={el.id}/>
 
-              })
+              } )
             }
-          </div>
-        </Slider>
-
+          </Slider>
       </div>
     </div>
     </div>

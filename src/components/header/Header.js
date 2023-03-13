@@ -12,15 +12,17 @@ import {SlBasket} from "react-icons/sl";
 
 
 
+
 const Header = () => {
     const [count, setCount] = useState(false)
     const {t, i18n} = useTranslation()
     const [regin, setRegin] = useState(false)
     const [menu, setMenu] = useState(false)
+    const lang = localStorage.getItem("i18nextLng")
+
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
-    console.log(menu)
     return (
         <div id='header'>
             <div className="container">
@@ -86,10 +88,10 @@ const Header = () => {
                         </div>
                         <div className="header--center__end">
                             <div className="header--center__end--one">
-                                <select onChange={(e) => changeLanguage(e.target.value.toLowerCase())}>
-                                    <option>EN</option>
-                                    <option>RU</option>
-                                    <option>KG</option>
+                                <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={lang}>
+                                    <option value={"en"}>EN</option>
+                                    <option value={"ru"}>RU</option>
+                                    <option value={"kg"}>KG</option>
                                 </select>
                             </div>
                             <div className="header--center__end--close" onClick={() => setRegin(false)}
