@@ -11,6 +11,7 @@
       position: relative;
       left: 20px;
       z-index: 50;
+
       h1 {
         font-family: 'Jost', sans-serif;
         font-weight: 900;
@@ -35,21 +36,22 @@
       left: -70px;
 
       .font {
-        width: 118%;
+        width: 560px;
+        position: relative;
+        left: 85px;
       }
 
       .font2 {
         position: absolute;
-        width: 83%;
+        width: 390px;
         z-index: 1;
-        top: 110px;
+        top: 1px;
         right: 1px;
       }
 
       .btn {
         position: absolute;
         padding: 12px 40px;
-        top: 500px;
         color: white;
         background: #2A2C31;
         left: 250px;
@@ -64,71 +66,43 @@
 
 @media (max-width: 1536px) {
   #hero .hero .words h1 {
-    font-size: 75px;
-    width: 70%;
+    font-size: 65px;
+    width: 55%;
   }
   #hero .hero .logo {
     left: -120px;
   }
   #hero .hero .logo .btn {
-    top: 570px;
+    top: 456px;
     margin: 0 0 0 20px;
   }
   #hero .hero .words p {
     font-size: 25px;
     width: 55%;
   }
-
-
-}
-
-@media (max-width: 1400px) {
-  #hero .hero .logo .btn {
-    top: 525px;
-    margin: 0 0 0 15px;
-  }
-  #hero .hero .words p {
-    width: 60%;
-  }
-
-}
-
-@media (max-width: 1280px) {
-  #hero .hero .words h1 {
-    width: 80%;
-    font-size: 65px;
-  }
-  #hero .hero .words p {
-    width: 70%;
-  }
   #hero .hero .logo .font2 {
-    top: 105px;
+    top: 90px;
   }
-  #hero .hero .logo .btn {
-    top: 500px;
-    margin: 0 0 0 -17px;
-    padding: 7px 12px;
-  }
-  #hero .hero .logo {
-    left: -80px;
+  #hero .hero .words {
+    left: 100px;
   }
 
+}
 
-
-
-
+@media (max-width: 1440px) {
+  #hero .hero .words h1 {
+    width: 62%;
+  }
 }
 
 @media (max-width: 1366px) {
   #hero .hero .words h1 {
-    font-size: 65px;
+    font-size: 62px;
   }
   #hero .hero .words p {
     width: 65%;
   }
   #hero .hero .logo .btn {
-    top: 545px;
-    margin: 0 0 0 7px;
   }
 
 
@@ -136,25 +110,27 @@
 
 @media (max-width: 1200px) {
   #hero .hero .words h1 {
-    width: 90%;
+    width: 82%;
   }
   #hero .hero .words p {
-    width: 75%;
+    width: 400px;
     padding: 20px 0 40px 0;
   }
   #hero .hero .logo .font {
-    width: 110%;
+    width: 500px;
+    position: relative;
+    left: 10px;
   }
   #hero .hero .logo .font2 {
-    width: 75%;
-    top: 118px;
-    right: 40px;
+    width: 350px;
+    top: 105px;
+    right: 83px;
   }
   #hero .hero .logo .btn {
-    top: 460px;
-    font-size: 12px;
-    padding: 9px 20px;
-    left: 220px;
+    top: 425px;
+    font-size: 10px;
+    padding: 9px 18px;
+    left: 190px;
   }
   #hero .hero .logo {
     left: -20px;
@@ -165,55 +141,77 @@
   #hero .hero .words h1 {
     font-size: 55px;
   }
+
   #hero .hero .words h1 {
     width: 75%;
   }
   #hero .hero .logo .btn {
-    top: 470px;
+    top: 425px;
   }
 }
 
 @media (max-width: 1024px) {
   #hero .hero .words h1 {
-    width: 90%;
+    width: 65%;
+    font-size: 51px;
+  }
+  #hero .hero .logo .font {
+    width: 400px;
+    position: relative;
+    left: 30px;
   }
   #hero .hero .words p {
     width: 90%;
     padding: 20px 0 40px 0;
   }
   #hero .hero .logo .font2 {
-    top: 110px;
+    width: 280px;
+    top: 72px;
+    right: 34px;
   }
   #hero .hero .logo .btn {
-    top: 430px;
-    left: 200px;
+    top: 330px;
+    left: 146px;
   }
-
+  #hero .hero .words p {
+    width: 75%;
+    font-size: 22px;
+    padding: 20px 0 40px 0;
+  }
+  #hero .hero .words {
+    left: 100px;
+    padding: 40px 0;
+  }
 
 }
 
 @media (max-width: 992px) {
   #hero .hero .words h1 {
-    width: 90%;
+    width: 70%;
     font-size: 50px;
   }
   #hero .hero .words p {
-    width: 90%;
-    font-size: 22px;
+    width: 73%;
+    font-size: 20px;
   }
   #hero .hero .logo .font {
-    width: 100%;
+    width: 400px;
+    position: relative;
+    right: 50px;
   }
   #hero .hero .logo .font2 {
-    width: 66%;
+    width: 70%;
     left: 85px;
   }
   #hero .hero .logo {
-    left: 30px;
+    left: -30px;
   }
   #hero .hero .logo .btn {
-    top: 390px;
-    left: 180px;
+    top: 331px;
+    left: 167px;
+  }
+  #hero .hero .words {
+    left: 69px;
   }
 
 
@@ -221,27 +219,27 @@
 
 @media (max-width: 768px) {
   #hero .hero .words h1 {
-    width: 100%;
-    font-size: 40px;
+    width: 70%;
+    font-size: 33px;
   }
   #hero .hero .words p {
-    width: 90%;
-    font-size: 18px;
+    width: 80%;
+    font-size: 15px;
   }
   #hero .hero .logo .font {
-    width: 90%;
+    width: 367px;
   }
   #hero .hero .logo {
     top: -30px;
   }
   #hero .hero .logo .font2 {
-    width: 60%;
-    left: 60px;
-    top: 80px;
+    width: 259px;
+    left: 78px;
+    top: 61px;
   }
   #hero .hero .logo .btn {
     top: 300px;
-    left: 130px;
+    left: 155px;
     font-size: 10px;
     padding: 6px 10px;
   }
@@ -249,24 +247,24 @@
 
 @media (max-width: 576px) {
   #hero .hero .logo {
-    top: -100px;
+    top: -146px;
   }
   #hero .hero .logo .font2 {
-    width: 55%;
-    top: 70px;
+    width: 260px;
+    top: 56px;
   }
   #hero .hero .logo .btn {
-    top: 220px;
-    left: 90px;
-    font-size: 7px;
+    top: 285px;
+    left: 142px;
+    font-size: 10px;
   }
   #hero .hero .words h1 {
-    width: 130%;
-    padding: 140px 0 0 0;
-    font-size: 37px;
+    width: 168%;
+    padding: 240px 17px 0 0;
+    font-size: 43px;
   }
   #hero .hero .words p {
-    width: 150%;
+    width: 130%;
   }
 
 }
@@ -285,18 +283,25 @@
     left: 18px;
   }
   #hero .hero .logo .font2 {
-    width: 60%;
-    top: 50px;
-    left: 45px;
+    width: 69%;
+    top: 7px;
+    left: 13px;
   }
   #hero .hero .logo .btn {
-    top: 195px;
+    top: 226px;
     left: 80px;
     border-radius: 4px;
     padding: 4px 8px;
   }
-
+  #hero .hero .logo .font {
+    width: 333px;
+    position: relative;
+    left: -41px;
+    top: -52px;
   }
+
+
+}
 
 @media (max-width: 414px) {
   #hero .hero .words h1 {
@@ -304,24 +309,37 @@
     font-size: 30px;
   }
   #hero .hero .logo .font2 {
-    top: 40px;
-    left: 40px;
+    top: -14px;
+    left: 1px;
   }
   #hero .hero .logo .btn {
     top: 175px;
     left: 70px;
   }
-
+  #hero .hero .logo .font {
+    width: 298px;
+    position: relative;
+    left: -53px;
+    top: -61px;
+  }
+  #hero .hero .logo .btn {
+    top: 181px;
+    left: 43px;
+  }
+  #hero .hero .words h1 {
+    width: 167%;
+    font-size: 31px;
+  }
 
 }
 
 @media (max-width: 400px) {
   #hero .hero .logo {
-    top: -90px;
+    top: -79px;
   }
   #hero .hero .logo .btn {
-    top: 170px;
-    left: 60px;
+    top: 178px;
+    left: 39px;
   }
   #hero .hero .words h1 {
     font-size: 28px;
@@ -329,7 +347,6 @@
   #hero .hero .words p {
     font-size: 12px;
   }
-
 
 
 }
@@ -344,31 +361,41 @@
   }
 
 
-
 }
 
 @media (max-width: 360px) {
   #hero .hero .logo .font2 {
-    left: 37px;
+    left: -4px;
+    top: -10px;
   }
   #hero .hero .logo .btn {
-    top: 150px;
-    left: 50px;
-    font-size: 6px;
+    top: 178px;
+    left: 38px;
+    font-size: 10px;
   }
 
 }
 
 @media (max-width: 320px) {
-#hero .hero .words h1 {
-  font-size: 20px;
-}
+  #hero .hero .words h1 {
+    font-size: 29px;
+  }
   #hero .hero .words p {
     font-size: 10px;
   }
-  #hero .hero .logo {
-    top: -80px;
+  #hero .hero .logo .font {
+    width: 272px;
+    left: -63px;
+    top: -61px;
   }
-
+  #hero .hero .logo .font2 {
+    left: -18px;
+    top: -13px;
+  }
+  #hero .hero .logo .btn {
+    top: 164px;
+    left: 30px;
+    font-size: 10px;
+  }
 }
 
