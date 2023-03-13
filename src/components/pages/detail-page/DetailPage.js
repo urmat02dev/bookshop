@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "./DetailPage.scss"
 import {useParams} from "react-router-dom";
-import Bookcard from "../bookcard";
 import axios from "axios";
 const DetailPage = () => {
   const {id} = useParams()
