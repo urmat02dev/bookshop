@@ -62,31 +62,6 @@ const DetailPage = () => {
         </div>
       </>
 
-    <>
-      <div id={"detail-page"}>
-        <div className="container">
-          <div className="detail-page">
-            <div className="detail-page--img">
-              <img src={image} alt=""/>
-            </div>
-            <div className="detail-page--desc1">
-              <h1>{name}</h1>
-              <p>{author.first_name + author.last_name}</p>
-              <h2>Originally published</h2>
-              <p>{published_day}</p>
-              <h2>Categories</h2>
-              <p>{category ? category : "NO"}</p>
-            </div>
-            <div className="detail-page--desc2">
-              <h2>Publisher</h2>
-              <p>{publisher ? publisher : "NO"}</p>
-              <p>{desc ? desc.slice(0,200) : 'No'}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-
   );
 };
 
