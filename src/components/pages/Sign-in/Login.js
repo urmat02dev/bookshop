@@ -12,7 +12,9 @@ const Login = () => {
     const [password_confirm, setPassword_confirm] = useState("")
     const [isDone, setIsDone] = useState("")
     const [tasks, setTasks] = useState([])
+    const [loader, setLoader] = useState(false)
     const {t, i18n} = useTranslation()
+
     const newtTasks = {
         username: username,
         email:email,
@@ -20,20 +22,31 @@ const Login = () => {
         password_confirm:password_confirm
     }
 
-    useEffect(() => {
-       setTasks([...tasks,newtTasks])
-    },[])
+
 
     const getValue = async () => {
-        const url = await axios.post("https://motionbookshop.herokuapp.com/accounts/register/",{
+        setLoader(true)
+        const url = await axios.post("https://bookshopmotion.herokuapp.com/accounts/register/",{
             username: username,
             email: email,
             password: password,
             password_confirm: password_confirm
         })
-
+        setLoader(false)
+        console.log(url)
     }
-
+    const getLogin = async () => {
+        setLoader(true)
+        const url = await axios.get("https://bookshopmotion.herokuapp.com/accounts/login/",{
+            password: password,
+            email: email,
+        })
+        setLoader(false)
+        console.log(url)
+    }
+    useEffect(() => {
+        setTasks([...tasks,newtTasks])
+    },[])
 
     return (
         <div id='login'>
@@ -67,7 +80,11 @@ const Login = () => {
 
                         </div>
                         <div className="login--login--btns">
+
+                            <button className={"btns"} onClick={() => getLogin()}>LOGIN</button>
+
                             <button className={"btns"}>{t("sign in.login")}</button>
+
                         </div>
                         <div className="login--login--read" >
                             <img src={read} alt=""/>
@@ -92,7 +109,7 @@ const Login = () => {
                             </div>
                         </div>
                         <div className="sign--btn" onClick={() => getValue()}>
-                            <button>LOGIN</button>
+                            <button>{loader ? "Loader.. " : "LOGIN"}</button>
                         </div>
                         <div className="sign--read" >
                             <img src={read} alt=""/>

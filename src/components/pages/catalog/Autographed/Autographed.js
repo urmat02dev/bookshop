@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import Bookcard from "../../bookcard";
+import Bookcard from "../../bookcard/Bookcard";
 import Slider from "react-slick";
 import axios from "axios";
 import "./Autographed.scss"
+import {useTranslation} from "react-i18next";
 
 const Autographed = () => {
   const [books,setBooks] = useState([])
@@ -52,8 +53,12 @@ const Autographed = () => {
       }
     ]
   };
+  const {t} =useTranslation()
   return (
     <div>
+      <div className={"catalog"}>
+        <h1>{t("genre.p1")}</h1>
+      </div>
       <Slider {...settings}>
         {
           books.map(el=> {
