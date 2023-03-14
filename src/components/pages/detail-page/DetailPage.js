@@ -34,15 +34,16 @@ const DetailPage = () => {
   },[id])
   console.log(detail.author)
   console.log(author)
-  const {image,name, name_ky, name_en, published_day,category,publisher,desc} = detail
+  const {image,name, name_ky, name_en, published_day,category,publisher,desc,price,new_price} = detail
   return (
 
       <>
         <div id={"detail-page"}>
           <div className="container">
             <div className="detail-page">
+
               <div className="detail-page--img">
-                <img src={image} alt=""/>
+                <img className="detail-page--img__book" src={image} alt=""/>
               </div>
               <div className="detail-page--desc1">
                 <h1>{name}</h1>
@@ -50,12 +51,18 @@ const DetailPage = () => {
                 <h2>Originally published</h2>
                 <p>{published_day}</p>
                 <h2>Categories</h2>
-                <p>{category ? category : "NO"}</p>
+                <p>categores</p>
               </div>
               <div className="detail-page--desc2">
                 <h2>Publisher</h2>
                 <p>{publisher ? publisher : "NO"}</p>
                 <p>{desc ? desc.slice(0,200) : 'No'}</p>
+                <div className="detail-page--desc2__block">
+                  <h4>{price} Com</h4>
+                  <h5>{new_price} Com</h5>
+                  <button className="btn">Order now</button>
+                </div>
+
               </div>
             </div>
           </div>
