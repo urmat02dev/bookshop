@@ -1,51 +1,333 @@
 
-body{
-  font-family: 'Jost',sans-serif;
-}
-
-
-#detail-page{
+#detail-page {
   background: #F8F4E4;
-  .detail-page{
+
+  .detail-page {
     display: flex;
     align-items: start;
-
     justify-content: space-between;
     padding: 50px 0 100px 0;
-    width: 100%;
-    &--desc1{
-      h1{
+
+    &--img {
+      padding: 0 0 0 70px;
+
+      &__book {
+        width: 195px;
+        padding: 0 0 0 70px;
+      }
+    }
+
+    &--desc1 {
+      padding: 0 100px 0 0;
+
+      h1 {
         font-weight: 500;
-        font-size: 30px;
+        font-size: 25px;
+        font-family: 'Jost', sans-serif;
         width: 50px;
         line-height: 120%;
       }
-      h2{
-        font-size: 25px;
+
+      p {
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        padding: 10px 0 0 0;
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 20px;
         padding: 15px 0;
         width: 100%;
+        font-family: 'Jost', sans-serif;
       }
-      p{
+
+      p {
         font-weight: 400;
-        font-size: 32px;
+        font-size: 20px;
         line-height: 120%;
+        font-family: 'Jost', sans-serif;
         width: 70%;
       }
     }
-    &--desc2{
-      h2{
+
+    &--desc2 {
+      padding: 0 100px 0 0;
+
+      h2 {
         font-size: 25px;
         width: 100%;
+        font-family: 'Jost', sans-serif;
       }
-      p{
+
+      p {
         font-weight: 400;
-        font-size: 22px;
+        font-size: 17px;
         line-height: 120%;
-        width: 320px;
-        padding: 15px 0;
+        width: 270px;
+        font-family: 'Jost', sans-serif;
+        padding: 10px 0;
       }
+
+      &__block {
+        h4 {
+          font-family: 'Jost', sans-serif;
+          font-weight: 500;
+          font-size: 17px;
+          color: #F54C0B;
+        }
+
+        h5 {
+          font-family: 'Jost', sans-serif;
+          font-weight: 500;
+          font-size: 17px;
+          padding: 0 0 10px 0;
+        }
+
+        .btn {
+          border-radius: 8px;
+          padding: 7px 22px;
+          background: black;
+          color: white;
+        }
+      }
+
     }
 
+  }
+}
+
+
+
+@media (max-width: 1536px) {
+  #detail-page .detail-page--desc2 {
+    padding: 0 200px 0 0;
+  }
+  #detail-page .detail-page--desc2 p {
+    width: 320px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  #detail-page .detail-page--desc2 {
+    padding: 0 200px 0 100px;
+  }
+  #detail-page .detail-page--desc1 {
+    padding: 0 100px 0 100px;
+  }
+  #detail-page .detail-page--desc1 h2 {
+    width: 200%;
+  }
+  #detail-page .detail-page--desc1 p {
+    width: 150%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  #detail-page .detail-page--desc2 p {
+    width: 260px;
+  }
+
+
+}
+
+@media (max-width: 1140px) {
+  #detail-page .detail-page--desc1 {
+    padding: 0 100px 0 50px;
+  }
+  #detail-page .detail-page--img {
+    padding: 0 0 0 60px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  #detail-page .detail-page--desc2 {
+    padding: 0 200px 0 50px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  #detail-page .detail-page--img {
+    padding: 0 0 0 50px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #detail-page .detail-page--desc2 p {
+    width: 190px;
+  }
+  #detail-page .detail-page--img {
+    padding: 0 0 0 1px;
+  }
+  #detail-page .detail-page--desc1 h2 {
+    width: 100%;
+  }
+  #detail-page .detail-page--desc2 {
+    padding: 0 200px 0 1px;
+  }
+  #detail-page .detail-page--desc1 {
+    padding: 0 50px 0 50px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #detail-page .detail-page {
+    display: flex;
+    flex-direction: column;
+  }
+  #detail-page .detail-page--desc1 h1 {
+    width: 100%;
+  }
+  #detail-page .detail-page--desc1 {
+    padding: 20px 50px 0 100px;
+  }
+  #detail-page .detail-page--desc2 {
+    padding: 30px 200px 0 70px;
+  }
+  #detail-page .detail-page--desc2 p {
+    width: 320px;
+  }
+  #detail-page .detail-page--img__book {
+    width: 200px;
+    height: 250px;
+    padding: 0 0 0 100px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  #detail-page .detail-page--desc2 p {
+    width: 280px;
+  }
+  #detail-page .detail-page--desc1 h1 {
+    width: 150%;
+    font-size: 35px;
+  }
+  #detail-page .detail-page--desc1 {
+    padding: 20px 50px 0 60px;
+  }
+  #detail-page .detail-page--desc1 h2 {
+    font-size: 25px;
+  }
+  #detail-page .detail-page--desc1 h2 {
+    font-size: 30px;
+  }
+  #detail-page .detail-page--desc2 h2 {
+    font-size: 30px;
+  }
+  #detail-page .detail-page--desc2 {
+    padding: 30px 200px 0 60px;
+  }
+  #detail-page .detail-page--desc2 p {
+    width: 310px;
+  }
+  #detail-page .detail-page--desc2__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  #detail-page .detail-page--desc2__block h5 {
+    padding: 10px 0 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #detail-page .detail-page--desc2 p {
+    width: 280px;
+  }
+  #detail-page .detail-page--desc2__block {
+    margin: 0 10px 0;
+  }
+  #detail-page .detail-page--desc2__block .btn {
+
+    width: 50%;
+  }
+}
+
+@media (max-width: 390px) {
+  #detail-page .detail-page--img__book {
+    padding: 0 0 0 75px;
+  }
+  #detail-page .detail-page--desc1 h1 {
+    font-size: 30px;
+  }
+  #detail-page .detail-page--desc1 h2 {
+    font-size: 25px;
+  }
+  #detail-page .detail-page--desc2 h2 {
+    font-size: 25px;
+  }
+  #detail-page .detail-page--desc2__block .btn {
+    width: 55%;
+    margin: 0 30px 0 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #detail-page .detail-page--desc1 h2 {
+    font-size: 24px;
+  }
+  #detail-page .detail-page--desc2__block .btn {
+    font-size: 10px;
+  }
+  #detail-page .detail-page--desc2__block {
+    margin: 0 1px 0;
+  }
+
+}
+
+@media (max-width: 360px) {
+  #detail-page .detail-page--img__book {
+    padding: 0 0 0 57px;
+  }
+  #detail-page .detail-page--desc1 {
+    padding: 20px 50px 0 40px;
+  }
+  #detail-page .detail-page--desc2 {
+    padding: 30px 200px 0 40px;
+  }
+  #detail-page .detail-page--desc1 h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  #detail-page .detail-page--img__book {
+    padding: 0 0 0 45px;
+  }
+  #detail-page .detail-page--desc1 h1 {
+    font-size: 28px;
+  }
+  #detail-page .detail-page--desc1 h2 {
+    font-size: 20px;
+  }
+  #detail-page .detail-page--desc2 h2 {
+    font-size: 20px;
+  }
+  #detail-page .detail-page--desc2 p {
+    width: 235px;
+  }
+  #detail-page .detail-page--desc2__block h5 {
+    padding: 10px 10px 10px 10px;
+  }
+  #detail-page .detail-page--desc2__block .btn {
+    padding: 10px 15px;
+ font-size: 10px;
+  }
+  #detail-page .detail-page--desc2 {
+    padding: 30px 200px 0 40px;
+  }
+  #detail-page .detail-page--img__book {
+    padding: 0 0 0 55px;
+    width: 170px;
+    height: 200px;
   }
 }
 

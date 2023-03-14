@@ -489,7 +489,7 @@
 
 @media (max-width: 320px) {
   #footer {
-    height: 652px;
+    height: 570px;
     .footer {
       &--over {
         display: flex;
@@ -499,25 +499,51 @@
         &__start {
           text-align: center;
           h1 {
-            font-size: 23px;
+            font-size: 20px;
           }
           p {
             width: 200px;
-            font-size: 14px;
+            font-size: 12px;
           }
         }
         &__center {
           display: flex;
           flex-direction: column;
           h2 {
-            font-size: 20px;
-            margin-left: 20px;
+            font-size: 15px;
+            margin-left: 1rem;
+          }
+          &--email {
+            &__icons {
+              padding: 5px 5px;
+            }
+            &__mail {
+              a {
+                font-size: 13px;
+              }
+            }
           }
           &--tel {
             margin-right: 10px;
+            &__phone {
+              padding: 5px 5px;
+            }
+            a {
+              font-size: 13px;
+            }
           }
           &--web {
             margin-left: 1rem;
+            &__inst {
+              .icons {
+                padding: 5px 5px;
+                font-size: 15px;
+              }
+              .iconst {
+                font-size: 15px;
+                padding: 5px 5px;
+              }
+            }
           }
         }
         &__end {
@@ -529,7 +555,18 @@
           p {
             width: 250px;
             margin-left: 1px;
-            font-size: 16px;
+            font-size: 13px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          &--blocks {
+            button {
+              font-size: 12px;
+              .arrow {
+                font-size: 10px;
+              }
+            }
           }
         }
       }
