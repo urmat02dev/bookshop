@@ -68,9 +68,6 @@ const DetailPage = () => {
           </div>
         </div>
       </>
-
-
-
   );
 };
 
