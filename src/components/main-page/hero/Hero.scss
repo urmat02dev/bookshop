@@ -108,6 +108,16 @@
 
 }
 
+@media (max-width: 1280px) {
+  #hero .hero .words h1 {
+    font-size: 62px;
+    width: 80%;
+  }
+  #hero .hero .words p {
+    width: 70%;
+  }
+
+}
 @media (max-width: 1200px) {
   #hero .hero .words h1 {
     width: 82%;
