@@ -10,7 +10,7 @@ const Sports = () => {
     try{
       const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
       const {data} = url
-      await setBooks(data.results)
+      await setBooks(data)
     }catch (e){
       console.log(e,"Error")
     }
