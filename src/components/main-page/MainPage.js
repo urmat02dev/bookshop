@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Hero from "./hero/Hero";
 import About from "./about/About";
 import Desc from "./desc/Desc";
@@ -7,7 +7,30 @@ import "./MainPage.scss"
 import Week from "./week/Week";
 import Genre from "./genre/Genre";
 import Comment from "./comment/Comment";
+import {useDispatch, useSelector} from "react-redux";
+import axios from "axios";
+import {GET_BOOKS} from "../../redux/Reducer/ActionTypes";
 const MainPage = () => {
+  const dispatch = useDispatch()
+  const {books} = useSelector(state => state)
+  const [book,setBook] = useState([])
+  const getBooks = async () => {
+    try{
+      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
+      const {data} = url
+      await setBook(data)
+      console.log(book)
+    }
+    catch (e){
+      console.log(e,"Error")
+    }
+  }
+  useEffect(() => {
+    getBooks()
+    dispatch({type:GET_BOOKS,payload:[...book] })
+  },[])
+  console.log(book)
+  console.log(books)
   return (
     <div>
       <Hero/>

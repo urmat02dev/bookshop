@@ -53,7 +53,7 @@
       }
       h4{
         width: 90%;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         font-weight: 500;
         color: #2A2C31;
       }
@@ -71,7 +71,6 @@
         border: none;
         color: white;
         font-size: 19px;
-        margin-top: 10px;
       }
     }
   }
@@ -82,10 +81,11 @@
     width: 86%;
   }
   #about .about--desc h4{
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
   #about .about--desc h1{
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    font-size: 46px;
   }
   #about .about--desc button{
     margin-top: 35px;
@@ -94,10 +94,16 @@
 @media (max-width: 1440px) {
   #about .about--desc h4{
     margin-top: 5px;
+    margin-bottom: 40px;
   }
   #about .about--desc h1{
     margin-bottom: 25px;
     font-size: 41px;
+  }
+}
+@media (max-width: 1366px) {
+  #about .about--desc button{
+    margin-top: 10px;
   }
 }
 @media (max-width: 1280px){
@@ -107,10 +113,17 @@
     margin-top:-10px;
   }
   #about .about--desc h4{
-
+    margin-bottom: 19px;
   }
 }
 @media (max-width: 1200px){
+  #about .about--desc button{
+    font-size: 16px;
+    margin-top: 23px;
+  }
+  #about .about--desc h1{
+    font-size: 32px;
+  }
 
 }
 @media (max-width: 1024px){
@@ -120,9 +133,16 @@
   #about .about--desc h1{
     width: 83%;
     font-size: 32px;
+    margin-bottom: 15px;
   }
   #about .about--desc h4{
     margin-bottom: 16px;
+  }
+  #about .about--desc button{
+    width: 30%;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 8px;
   }
 }
 @media (max-width: 768px){
@@ -130,6 +150,7 @@
     .about{
       flex-direction: column;
       align-items: center;
+      padding-bottom: 40px;
       &--img{
         width: 100%;
         margin-top: 20px;
@@ -152,6 +173,7 @@
           width: 100%;
           font-size: 16px;
         }
+
 
       }
     }
@@ -185,9 +207,11 @@
           font-size: 15px;
         }
         button{
-          width: 23%;
-          height: 38px;
-          font-size: 17px;
+          button {
+            width: 38%;
+            height: 38px;
+            font-size: 17px;
+          }
 
         }
 
@@ -252,7 +276,9 @@
           font-size: 13px;
         }
         button{
-          font-size: 11px;
+          width: 55%;
+          height: 29px;
+          font-size: 13px;
         }
 
       }
@@ -289,11 +315,7 @@
         h3{
           font-size: 11px;
         }
-        button{
-          width: 33%;
-          height: 38px;
-          font-size: 14px;
-        }
+
 
       }
     }
@@ -326,9 +348,9 @@
           font-size: 10px;
         }
         button{
-          width: 33%;
-          height: 38px;
-          font-size: 14px;
+          width: 50%;
+          height: 25px;
+          font-size: 12px;
         }
 
       }
@@ -351,11 +373,6 @@
         width: 82%;
         h1{
           font-size: 13px;
-        }
-        button{
-          width: 35%;
-          height: 39px;
-          font-size: 12px;
         }
 
       }
