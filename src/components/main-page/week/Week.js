@@ -3,21 +3,24 @@ import "./Week.scss"
 import axios from "axios";
 
 import Slider from "react-slick"
-import Bookcard from "../../pages/bookcard";
+import Bookcard from "../../pages/bookcard/Bookcard";
 
 const Week = () => {
   const [books,setBooks] = useState([])
-
    const getBooks = async () => {
      try{
        const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
        const {data} = url
        await setBooks(data)
+
      }catch (e){
+
+     }
+     catch (e){
+
        console.log(e,"Error")
      }
    }
-
    useEffect(()=> {
      getBooks()
    },[])
@@ -60,7 +63,6 @@ const Week = () => {
   return (
 
     <div id={"week"}>
-
     <div className="container">
       <div className={"week--title"}>
         <h1>Bestsellers Of The Week</h1>
@@ -70,8 +72,7 @@ const Week = () => {
           <Slider {...settings}>
             {
               books.map(el=> {
-
-                return <Bookcard el={el} key={el.id}/>
+                return <Bookcard el={el} key={el.id} />
 
               } )
             }

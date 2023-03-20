@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import Slider from "react-slick";
-import Bookcard from "../../bookcard";
+import Bookcard from "../../bookcard/Bookcard";
 import "./Self-development.scss"
 const SelfDevelopment = () => {
   const [books,setBooks] = useState([])
@@ -9,7 +9,7 @@ const SelfDevelopment = () => {
     try{
       const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
       const {data} = url
-      await setBooks(data.results)
+      await setBooks(data)
     }catch (e){
       console.log(e,"Error")
     }

@@ -4,9 +4,12 @@ import card from "../../../assets/img/image 19.png"
 import card2 from "../../../assets/img/image 20.png"
 import card3 from "../../../assets/img/image 21.png"
 import {useTranslation} from "react-i18next";
+import {useSelector} from "react-redux";
 
 const Payments = () => {
     const {t,i18n} =useTranslation()
+    const {basket} = useSelector(s => s)
+    console.log(basket)
     return (
         <div id="pay">
             <div className="container">
@@ -34,6 +37,10 @@ const Payments = () => {
                             <p className="text2">{t("payments.p7")}</p>
                              <p className="text3"> {t("payments.p8")}</p>
 
+                        </div>
+                        <div className="tittle3">
+                            <img src={basket.image} width="200px" alt=""/>
+                            <h1>{basket.name}</h1>
                         </div>
                     </div>
 

@@ -3,6 +3,8 @@ import "./DetailPage.scss"
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import {useTranslation} from "react-i18next";
+import {useDispatch} from "react-redux";
+import {GET_BASKET} from "../../../redux/Reducer/ActionTypes";
 const DetailPage = () => {
   const {id} = useParams()
   const [detail, setDetail] = useState({})
@@ -14,16 +16,7 @@ const DetailPage = () => {
       const url  = await axios (`https://bookshopmotion.herokuapp.com/product/books/${id}`)
       const {data} = url
       await setDetail(data)
-      console.log(url)
-    }catch (e){
-      console.log(e,"Error")
-    }
-  }
-  const getAuthors = async () => {
-    try{
-      const url  = await axios (`https://bookshopmotion.herokuapp.com/product/author/${detail.author.toString()}`)
-      const {data} = url
-      await setAuthor(data)
+      await setAuthor(author)
       console.log(url)
     }catch (e){
       console.log(e,"Error")
@@ -31,12 +24,11 @@ const DetailPage = () => {
   }
   useEffect(() => {
     getDetail()
-    getAuthors()
   },[id])
-  console.log(detail.author)
-  console.log(author)
   const {image,name, name_ky, name_en, published_day,category,publisher,desc,price,new_price} = detail
   const {t} =useTranslation()
+  const dispatch = useDispatch()
+
   return (
 
       <>
@@ -48,7 +40,7 @@ const DetailPage = () => {
                 <img className="detail-page--img__book" src={image} alt=""/>
               </div>
               <div className="detail-page--desc1">
-                <h1>{name}</h1>
+                <h1>{lang === "en" ? name_en && lang === "ru" ? name &&  lang === "kg" ? name_ky : '' :"" :''}</h1>
                 <p>{author.first_name + author.last_name}</p>
                 <h2>{t("detailPage.h2")}</h2>
                 <p>{published_day}</p>
@@ -62,7 +54,7 @@ const DetailPage = () => {
                 <div className="detail-page--desc2__block">
                   <h4>{price} Com</h4>
                   <h5>{new_price} Com</h5>
-                  <button className="btn">{t("detailPage.btn")}</button>
+                  <button className="btn" onClick={() => dispatch({type:GET_BASKET, payload:detail})}>{t("detailPage.btn")}</button>
                 </div>
 
               </div>
@@ -70,9 +62,6 @@ const DetailPage = () => {
           </div>
         </div>
       </>
-
-
-
   );
 };
 

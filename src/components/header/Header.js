@@ -71,7 +71,7 @@ const Header = () => {
 
                         </div>
                         <div className="header--center__start" onClick={() => setCount(true)}>
-                            <button onClick={() => setCount(true)}>Search<BsSearch/></button>
+                            <button onClick={() => setCount(true)}>{t('header.search')}<BsSearch/></button>
                             <div style={{
                                 display: count ? 'block' : 'none'
                             }}>
@@ -80,11 +80,11 @@ const Header = () => {
 
                         </div>
                         <div className="header--center__block">
-                            <NavLink to='/catalog'>Catalog</NavLink>
-                            <NavLink to='/payments'>Payments</NavLink>
-                            <NavLink to='/delivery'>Delivery</NavLink>
-                            <NavLink to='/basket'>Basket</NavLink>
-                            <NavLink to='/contacts'>Contacts</NavLink>
+                            <NavLink to='/catalog'>{t('header.catalog')}</NavLink>
+                            <NavLink to='/payments'>{t('header.Payments')}</NavLink>
+                            <NavLink to='/delivery'>{t('header.Delivery')}</NavLink>
+                            <NavLink to='/basket'>{t('header.Basket')}</NavLink>
+                            <NavLink to='/contacts'>{t('header.Contacts')}</NavLink>
                         </div>
                         <div className="header--center__end">
                             <div className="header--center__end--one">
