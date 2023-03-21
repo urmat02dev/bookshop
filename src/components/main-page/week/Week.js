@@ -19,8 +19,12 @@ const Week = () => {
        const {data} = url
        await setBooks(data)
        setLoader(false)
+     }catch (e){
+
+
      }
      catch (e){
+
        console.log(e,"Error")
      }
    }
