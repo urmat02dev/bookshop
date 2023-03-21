@@ -1,7 +1,6 @@
 import './App.scss';
 import MainPage from "./components/main-page/MainPage";
 import {Routes,Route} from "react-router-dom";
-import Basket from "./components/pages/basket/Basket";
 import Catalog from "./components/pages/catalog/Catalog";
 import Contacts from "./components/pages/contacts/Contacts";
 import Delivery from "./components/pages/delivery/Delivery";
@@ -18,13 +17,14 @@ import Religion from "./components/pages/catalog/Religion/Religion";
 import Pedagogy from "./components/pages/catalog/Pedagogy/Pedagogy";
 import SelfDevelopment from "./components/pages/catalog/Self-development/Self-development";
 import Publicism from "./components/pages/catalog/Publicism/Publicism";
+import Result from "./components/pages/result/Result";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<MainPage/>}/>
-        <Route path="/basket" element={<Basket/>}/>
+        <Route path="/search-result" element={<Result/>}/>
         <Route path="/catalog" element={<Catalog/>}/>
         <Route path="/catalog/autographed" element={<Autographed/>}/>
         <Route path="/catalog/fantasy" element={<Fantasy/>}/>

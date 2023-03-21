@@ -97,13 +97,5 @@
     "Delivery": "Жеткирүү",
     "Basket": "Себет",
     "Contacts": "Байланыш"
-  },
-  "sign-in": {
-    "Login": "Кирүу",
-    "sign": "SIGN UP",
-    "place": "Email or username",
-    "password": "Password",
-    "h5": "Remember me",
-    "two": "Forgot Password ?"
   }
 }
