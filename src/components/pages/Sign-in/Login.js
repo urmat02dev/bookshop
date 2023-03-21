@@ -57,10 +57,10 @@ const Login = () => {
                     </div>
                     <div className="login--sign">
                         <div className={`login--sign__one ${index === 0 ? "active" : null}`} onClick={() => setIndex(0)}>
-                            <h2>{t("sign in.Login")}</h2>
+                            <h2>LOGIN</h2>
                         </div>
                         <div className={`login--sign__two ${index === 1 ? "active" : null }`} onClick={() => setIndex(1)}>
-                            <h3>{t("sign in.sign")}</h3>
+                            <h3>SIGN IN</h3>
                         </div>
                     </div>
                     <div className={`login--login`} hidden={index === 1}>

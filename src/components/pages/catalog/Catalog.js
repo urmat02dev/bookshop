@@ -10,14 +10,17 @@ import Publicism from "./Publicism/Publicism";
 import Religion from "./Religion/Religion";
 import SelfDevelopment from "./Self-development/Self-development";
 import Sports from "./Sports/Sports";
+import Loader from "../../loader/Loader";
 const Catalog = () => {
 
   return (
     <div>
-    <Autographed/>
+
+      <Autographed/>
+      <Fantasy/>
       <BusinessLiterature/>
       <ChildrenSBooks/>
-      <Fantasy/>
+
       <HobbiesAndLeisure/>
       <Pedagogy/>
       <Publicism/>

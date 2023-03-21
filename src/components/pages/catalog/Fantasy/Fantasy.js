@@ -8,7 +8,7 @@ const Fantasy = () => {
   const [books,setBooks] = useState([])
   const getBooks = async () => {
     try{
-      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
+      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=889ee63c-94f0-4c52-b93a-dd742b990ba4')
       const {data} = url
       await setBooks(data)
     }catch (e){
