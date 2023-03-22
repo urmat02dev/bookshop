@@ -1,6 +1,6 @@
 import {
   GET_BASKET,
-  GET_BOOKS, GET_LOADER,
+  GET_BOOKS,
   GET_RESULTS,
   GET_SEARCH
 } from "./ActionTypes";
@@ -10,7 +10,8 @@ const initialState ={
     basket:[],
     input : "",
     results:[],
-    loader:true
+    auth:[],
+
 }
 
 export const MainReducer = (state = initialState, action) => {
@@ -27,9 +28,7 @@ export const MainReducer = (state = initialState, action) => {
     case GET_RESULTS :{
       return {...state, results: action.payload}
     }
-    case GET_LOADER :{
-      return {...state, loader: action.payload}
-    }
+
 
     default :
       return state

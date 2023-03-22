@@ -5,8 +5,6 @@ import axios from "axios";
 import "./Autographed.scss"
 import {useTranslation} from "react-i18next";
 import Loader from "../../../loader/Loader";
-import {useDispatch, useSelector} from "react-redux";
-import {GET_LOADER} from "../../../../redux/Reducer/ActionTypes";
 
 const Autographed = () => {
   const [books,setBooks] = useState([])
@@ -25,7 +23,6 @@ const Autographed = () => {
   useEffect(()=> {
     getBooks()
   },[])
-  console.log(loader)
   let settings = {
     dots: true,
     infinite: false,

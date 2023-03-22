@@ -14,38 +14,23 @@ const Login = () => {
     const [tasks, setTasks] = useState([])
     const [loader, setLoader] = useState(false)
     const {t, i18n} = useTranslation()
-
     const newtTasks = {
         username: username,
         email:email,
         password:password,
         password_confirm:password_confirm
     }
-
-
-
-    const getValue = async () => {
-        setLoader(true)
-        const url = await axios.post("https://bookshopmotion.herokuapp.com/accounts/register/",{
-            username: username,
-            email: email,
-            password: password,
-            password_confirm: password_confirm
-        })
-        setLoader(false)
-        console.log(url)
-    }
-    const getLogin = async () => {
-        setLoader(true)
-        const url = await axios.get("https://bookshopmotion.herokuapp.com/accounts/login/",{
-            password: password,
-            email: email,
-        })
-        setLoader(false)
-        console.log(url)
-    }
-    useEffect(() => {
+    localStorage.setItem("auth",JSON.stringify(tasks))
+    function getAuth () {
+        const auth = localStorage.getItem("auth")
         setTasks([...tasks,newtTasks])
+        localStorage.setItem("auth",JSON.stringify(tasks))
+        console.log(auth)
+    }
+
+
+    useEffect(() => {
+
     },[])
 
     return (
@@ -81,7 +66,7 @@ const Login = () => {
                         </div>
                         <div className="login--login--btns">
 
-                            <button className={"btns"} onClick={() => getLogin()}>LOGIN</button>
+                            <button className={"btns"} onClick={() => getAuth()}>LOGIN</button>
 
                             <button className={"btns"}>{t("sign in.login")}</button>
 
@@ -108,7 +93,7 @@ const Login = () => {
                                 <input type="checkbox" onChange={(event) => setIsDone(!false)}/> <h5>I agree with privacy</h5>
                             </div>
                         </div>
-                        <div className="sign--btn" onClick={() => getValue()}>
+                        <div className="sign--btn" >
                             <button>{loader ? "Loader.. " : "LOGIN"}</button>
                         </div>
                         <div className="sign--read" >
