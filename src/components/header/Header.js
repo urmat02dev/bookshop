@@ -83,7 +83,6 @@ const Header = () => {
                             <NavLink to='/catalog'>{t('header.catalog')}</NavLink>
                             <NavLink to='/payments'>{t('header.Payments')}</NavLink>
                             <NavLink to='/delivery'>{t('header.Delivery')}</NavLink>
-                            <NavLink to='/basket'>{t('header.Basket')}</NavLink>
                             <NavLink to='/contacts'>{t('header.Contacts')}</NavLink>
                         </div>
                         <div className="header--center__end">

@@ -12,14 +12,12 @@ import axios from "axios";
 import {GET_BOOKS} from "../../redux/Reducer/ActionTypes";
 const MainPage = () => {
   const dispatch = useDispatch()
-  const {books} = useSelector(state => state)
   const [book,setBook] = useState([])
   const getBooks = async () => {
     try{
       const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
       const {data} = url
       await setBook(data)
-      console.log(book)
     }
     catch (e){
       console.log(e,"Error")
@@ -29,8 +27,6 @@ const MainPage = () => {
     getBooks()
     dispatch({type:GET_BOOKS,payload:[...book] })
   },[])
-  console.log(book)
-  console.log(books)
   return (
     <div>
       <Hero/>

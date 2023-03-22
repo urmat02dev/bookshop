@@ -39,7 +39,7 @@
   "genre": {
     "h1": "Genre",
     "btn": "See all",
-    "p1": "Autographed books",
+    "p1": "Autobiographical books",
     "p2": "Fantasy",
     "p3": "Children's books",
     "p4": "Business literature",
@@ -77,7 +77,7 @@
     "Delivery": "Delivery",
     "Basket": "Basket",
     "Contacts": "Contacts",
-    "search": "search"
+    "search": "Search"
   },
   "search": {
     "placeholder": "Enter the text"
@@ -96,15 +96,8 @@
     "Delivery": "Delivery",
     "Basket": "Basket",
     "Contacts": "Contacts"
-  },
-  "sign-in": {
-    "Login": "SIGN IN",
-    "sign": "SIGN UP",
-    "place": "Email or username",
-    "password": "Password",
-    "h5": "Remember me",
-    "two": "Forgot Password ?"
   }
+
 }
 
 

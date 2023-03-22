@@ -4,14 +4,18 @@ import Slider from "react-slick";
 import axios from "axios";
 import "./Autographed.scss"
 import {useTranslation} from "react-i18next";
+import Loader from "../../../loader/Loader";
 
 const Autographed = () => {
   const [books,setBooks] = useState([])
+  const [loader,setLoader] = useState(false)
   const getBooks = async () => {
     try{
-      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
+      setLoader(true)
+      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=889ee63c-94f0-4c52-b93a-dd742b990ba4')
       const {data} = url
       await setBooks(data)
+      setLoader(false)
     }catch (e){
       console.log(e,"Error")
     }
@@ -55,19 +59,25 @@ const Autographed = () => {
   };
   const {t} =useTranslation()
   return (
-    <div>
-      <div className={"catalog"}>
+    <div id={"catalog"}>
+      <div className="container">
         <h1>{t("genre.p1")}</h1>
-      </div>
-      <Slider {...settings}>
+      <div className={"catalog"}>
         {
-          books.map(el=> {
+          loader ? <div><Loader/></div> :
+            <Slider {...settings}>
+              {
+                books.map(el=> {
+                  return  <Bookcard el={el}
+                          key={el.id}
+                          />
+                } )
+              }
+            </Slider>
 
-            return <Bookcard el={el} key={el.id}/>
-
-          } )
         }
-      </Slider>
+        </div>
+      </div>
     </div>
   );
 };

@@ -3,14 +3,20 @@ import axios from "axios";
 import Slider from "react-slick";
 import Bookcard from "../../bookcard/Bookcard";
 import "./Fantasy.scss"
+import Loader from "../../../loader/Loader";
+import {useTranslation} from "react-i18next";
 
 const Fantasy = () => {
   const [books,setBooks] = useState([])
+  const [loader,setLoader] = useState(false)
+  const {t} =useTranslation()
   const getBooks = async () => {
     try{
-      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
+      setLoader(true)
+      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=8e6c5bf0-7598-4c20-802c-786431d3e939')
       const {data} = url
       await setBooks(data)
+      setLoader(false)
     }catch (e){
       console.log(e,"Error")
     }
@@ -53,16 +59,25 @@ const Fantasy = () => {
     ]
   };
   return (
-    <div>
-      <Slider {...settings}>
-        {
-          books.map(el=> {
+    <div id={"catalog"}>
+      <div className="container">
+        <h1>{t("genre.p2")}</h1>
+        <div className={"catalog"}>
+          {
+            loader ? <div><Loader/></div> :
+              <Slider {...settings}>
+                {
+                  books.map(el=> {
+                    return  <Bookcard el={el}
+                                      key={el.id}
+                    />
+                  } )
+                }
+              </Slider>
 
-            return <Bookcard el={el} key={el.id}/>
-
-          } )
-        }
-      </Slider>
+          }
+        </div>
+      </div>
     </div>
   );
 };
