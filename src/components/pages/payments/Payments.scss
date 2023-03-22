@@ -4,464 +4,130 @@
   }
   background: #F8F4E4;
   .pay {
-
-    h1 {
-      font-weight: 500;
-      font-size: 25px;
-      text-align: center;
-      padding: 50px 0 0 0;
-    }
-
-    .page {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 80px 0 100px 0;
-      .tittle {
-        padding: 0 20px 0 20px;
-        h2 {
-          font-weight: 500;
-          font-size: 18px;
-          width: 180%;
-          padding: 0 0 30px 0;
-        }
-
-        .words {
-          font-weight: 500;
-          font-size: 18px;
-          width: 200%;
-          padding:10px 0 30px 0;
-        }
-
-        p {
-          font-weight: 500;
-          font-size: 18px;
-        }
-        .word{
-          padding:40px 0;
-        }
-        .card {
-          width: 25%;
-          padding: 0 5px;
-        }
-      }
-
-      .tittle2 {
-        padding: 0 20px 0 300px;
-        h3 {
-          font-weight: 500;
-          font-size: 19px;
-        }
-
-        h4 {
-          font-weight: 500;
-          font-size: 18px;
-          width: 60%;
-          padding: 20px 0;
-        }
-        .text{
-          font-weight: 400;
-          font-size: 15px;
-          width: 95%;
-          line-height: 130%;
-        }
-        .text2{
-          font-weight: 400;
-          font-size: 15px;
-          width: 100%;
-          line-height: 130%;
-          padding: 20px 0;
-        }
-        .text3{
-          font-weight: 400;
-          font-size: 15px;
-          width: 100%;
-          line-height: 130%;
-        }
-      }
-    }
-
-  }
-}
-
-@media (max-width: 1536px) {
-  #pay .pay .page .tittle .words {
-    width: 160%;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 55%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 80%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 70%;
-  }
-  #pay .pay .page {
-    padding: 80px 0 100px 100px;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 20px 10px 300px;
-  }
-}
-
-@media (max-width: 1400px) {
-  #pay .pay .page .tittle2 h4 {
-    width: 60%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 95%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 75%;
-    padding: 25px 0;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 90%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 20px 15px 300px;
-  }
-}
-
-@media (max-width: 1366px) {
-  #pay .pay .page .tittle .words {
-    width: 190%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 94%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 93%;
-  }
-  #pay .pay .page .tittle h2 {
-    width: 190%;
-  }
-  #pay .pay .page {
-    padding: 80px 0 100px 50px;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 20px 0 300px;
-  }
-}
-
-@media (max-width: 1280px) {
-  #pay .pay .page .tittle2 h4 {
-    width: 65%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 105%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 100%;
-  }
-  #pay .pay .page .tittle {
-    padding:0 10px 10px 20px;
-  }
-  #pay .pay .page .tittle .words {
-    width: 195%;
-  }
-
-}
-
-@media (max-width: 1200px) {
-  #pay .pay .page .tittle h2 {
-    width: 110%;
-  }
-  #pay .pay .page .tittle .words {
-    width: 150%;
-  }
-  #pay .pay .page .tittle .word {
-    width: 150%;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 70%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 60%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 20px 10px 300px;
-  }
-}
-
-@media (max-width: 1140px) {
-  #pay .pay .page .tittle2 .text {
-    width: 80%;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 75%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 80%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 85%;
-  }
-  #pay .pay .page .tittle h2 {
-    width: 115%;
-    line-height: 180%;
-  }
-  #pay .pay .page .tittle .words {
-    width: 160%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 20px 0 300px;
-  }
-  #pay .pay .page .tittle {
-    padding: 0 10px 30px 20px;
-  }
-}
-
-@media (max-width: 1024px) {
-  #pay .pay .page .tittle h2 {
-    width: 150%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 50PX 20px 0 300px;
-  }
-
-
-}
-
-@media (max-width: 992px) {
-  #pay .pay .page .tittle2 {
-    padding: 50PX 20px 0 250px;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 90%;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 65%;
-  }
-  #pay .pay .page .tittle h2 {
-    width: 145%;
-    line-height: 125%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 40px 20px 0 250px;
-  }
-
-}
-
-@media (max-width: 768px) {
-  #pay .pay .page {
     display: flex;
     align-items: center;
+    padding: 100px 0 150px 0;
+    .card{
+      margin: 0 30px;
+      border: 2px solid #D9D9D9;
+      padding: 50px 50px 50px 100px;
+      .check {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 17px;
+        }
+      }
+      .in{
+        display: flex;
+        align-items: center;
+        input{
+          margin: 20px 0;
+          border: 2px solid #D9D9D9;
+          background: #F8F4E4;
+          padding: 8px 100px 10px 10px;
+        }
+        .word{
+          width: 28%;
+          font-size: 14px;
+          padding: 0 10px;
+        }
+        .word2{
+          width: 38%;
+          padding: 0 10px;
+          font-size: 14px;
+        }
+      }
+      button{
+        padding: 10px 35px;
+        color: whitesmoke;
+        background: black;
+        border-radius: 10px;
+        margin: 20px 0 0 70px;
+        font-size: 18px;
+      }
+    }
+    .book{
+      position: absolute;
+      top: 270px;
+      left: 880px;
+      border: 2px solid #D9D9D9;
+      padding: 170px 160px;
+    }
+  }
+}
+
+@media (max-width:1536px ) {
+  #pay .pay .book {
+    top: 270px;
+    left: 960px;
+    padding: 190px 180px;
+  }
+
+}
+
+@media (max-width:1400px ) {
+  #pay .pay .book {
+    top: 270px;
+    left: 960px;
+    padding: 190px 180px;
+  }
+
+}
+
+@media (max-width:1366px ) {
+  #pay .pay .book {
+    left: 910px;
+  }
+}
+
+@media (max-width:1280px ) {
+
+  #pay .pay .card {
+    padding: 50px 50px 50px 70px;
+  }
+  #pay .pay .book {
+    left: 850px;
+  }
+}
+
+@media (max-width:1200px ) {
+
+  #pay .pay .card {
+    padding: 50px 20px 50px 40px;
+  }
+  #pay .pay .book {
+    left: 850px;
+  }
+  #pay .pay .book {
+    padding: 190px 150px;
+  }
+  #pay .pay .card {
+    padding: 50px 0 50px 40px;
+  }
+  #pay .pay .book {
+    left: 800px;
+  }
+}
+
+@media (max-width:992px ) {
+  #pay .pay .card .in .word {
+    width: 20%;
+  }
+  #pay .pay .card .in .word2 {
+    width: 31%;
+  }
+  #pay .pay .card {
+    padding: 50px 0 50px 40px;
+    position: relative;
+    left: 70px;
+  }
+  #pay .pay {
+flex-wrap: wrap;
     flex-direction: column;
   }
-  #pay .pay .page .tittle .words {
-    width: 90%;
-  }
-  #pay .pay .page .tittle {
-    padding: 0 10px 30px 80px;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 100%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 40px 20px 0 80px;
-  }
 }
-
-@media (max-width:576px) {
-  #pay .pay .page .tittle {
-    padding: 0 10px 30px 40px;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 10px 30px 40px;
-  }
-  #pay .pay .page .tittle h2 {
-    width: 65%;
-  }
-  #pay .pay .page .tittle .words {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 80%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 80%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 70%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 84%;
-  }
-}
-
-@media (max-width:450px) {
-  #pay .pay h1 {
-    padding: 40px 0 0 5px;
-  }
-  #pay .pay .page .tittle {
-    padding: 0 10px 30px 20px;
-  }
-  #pay .pay .page .tittle h2 {
-    width: 75%;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 10px 30px 20px;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 75%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 65%;
-  }
-  #pay .pay .page .tittle {
-    padding: 0 10px 50px 20px;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 10px 0 20px;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 79%;
-  }
-}
-
-@media (max-width:400px) {
-  #pay .pay .page .tittle h2 {
-    width: 70%;
-  }
-  #pay .pay .page .tittle .words {
-    width: 87%;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 80%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 69%;
-  }
-
-}
-
-@media (max-width:390px) {
-  #pay .pay .page .tittle .words {
-    width: 91%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 82%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 72%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 80%;
-  }
-  #pay .pay .page .tittle h2 {
-    line-height: 140%;
-  }
-
-}
-
-@media (max-width:380px) {
-  #pay .pay .page .tittle .words {
-    width: 85%;
-  }
-  #pay .pay .page .tittle .word {
-    font-size: 15px;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 83%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 75%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 75%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 83%;
-  }
-  #pay .pay h1 {
-     padding: 60px 0 0 5px;
-   }
-
-}
-
-@media (max-width:360px) {
-  #pay .pay .page .tittle .words {
-    width: 74%;
-    text-align: center;
-  }
-  #pay .pay .page .tittle h2 {
-    text-align: center;
-  }
-  #pay .pay .page .tittle2 h4 {
-    text-align: center;
-  }
-  #pay .pay .page .tittle2 h3 {
-    padding: 0 0 0 40px;
-  }
-  #pay .pay .page .tittle2 {
-    padding: 0 10px 0 0;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 95%;
-  }
-  #pay .pay .page .tittle2 .text2 {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 90%;
-  }
-}
-
-@media (max-width:320px) {
-  #pay .pay h1 {
-    font-size: 20px;
-  }
-  #pay .pay .page .tittle h2 {
-  width: 80%;
-    text-align: start;
-  }
-  #pay .pay .page .tittle .words {
-    width: 85%;
-    text-align: start;
-  }
-  #pay .pay .page .tittle .word {
-    font-size: 13px;
-  }
-  #pay .pay .page .tittle .card {
-    width: 25%;
-    padding: 0 5px 0 0;
-  }
-  #pay .pay .page .tittle2 h4 {
-    width: 90%;
-  }
-  #pay .pay .page .tittle2 .text {
-    width: 85%;
-  }
-  #pay .pay .page .tittle2 .text3 {
-    width: 80%;
-  }#pay .pay .page .tittle {
-     padding: 0 10px 50px 10px;
-   }
-  #pay .pay .page .tittle2 h4 {
-    width: 80%;
-    text-align: start;
-  }
-
-}
-
-
-
-
-

@@ -18,9 +18,13 @@ const Week = () => {
        const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=1b6ce0bd-7e8d-4c81-a149-0ae12e543e8c')
        const {data} = url
        await setBooks(data)
+
+     }catch (e){
+
        setLoader(false)
      }
      catch (e){
+
        console.log(e,"Error")
      }
    }
