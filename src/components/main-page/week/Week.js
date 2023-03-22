@@ -3,25 +3,35 @@ import "./Week.scss"
 import axios from "axios";
 
 import Slider from "react-slick"
-import Bookcard from "../../pages/bookcard";
+import Bookcard from "../../pages/bookcard/Bookcard";
+import {GET_LOADER} from "../../../redux/Reducer/ActionTypes";
+import {useDispatch} from "react-redux";
+import Loader from "../../loader/Loader";
 
 const Week = () => {
   const [books,setBooks] = useState([])
-
+  const lang = localStorage.getItem("i18nextLng")
+  const [loader,setLoader] = useState(false)
    const getBooks = async () => {
      try{
-       const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
+       setLoader(true)
+       const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=1b6ce0bd-7e8d-4c81-a149-0ae12e543e8c')
        const {data} = url
        await setBooks(data)
+
      }catch (e){
+
+       setLoader(false)
+     }
+     catch (e){
+
        console.log(e,"Error")
      }
    }
-
    useEffect(()=> {
      getBooks()
    },[])
-  console.log(books)
+
 
   let settings = {
     dots: true,
@@ -60,23 +70,23 @@ const Week = () => {
   return (
 
     <div id={"week"}>
-
     <div className="container">
       <div className={"week--title"}>
         <h1>Bestsellers Of The Week</h1>
         <button>See all</button>
       </div>
-      <div className="week">
-          <Slider {...settings}>
-            {
-              books.map(el=> {
-
-                return <Bookcard el={el} key={el.id}/>
-
-              } )
-            }
-          </Slider>
-      </div>
+      {
+        loader ? <Loader/> :
+          <div className="week">
+            <Slider {...settings}>
+              {
+                books.map(el=> {
+                  return <Bookcard el={el} key={el.id} />
+                } )
+              }
+            </Slider>
+          </div>
+      }
     </div>
     </div>
   );

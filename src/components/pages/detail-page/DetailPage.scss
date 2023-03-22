@@ -12,20 +12,28 @@
       padding: 0 0 0 70px;
 
       &__book {
-        width: 195px;
+        width: 210px;
+        height: 300px;
         padding: 0 0 0 70px;
       }
     }
 
     &--desc1 {
       padding: 0 100px 0 0;
+      .title{
+        font-size: 26px;
+        color: #161718;
+        font-weight: 500;
+        width: 90%;
+      }
 
       h1 {
         font-weight: 500;
         font-size: 25px;
         font-family: 'Jost', sans-serif;
-        width: 50px;
+        width: 60%;
         line-height: 120%;
+        text-align: left;
       }
 
       p {
@@ -75,6 +83,10 @@
           font-weight: 500;
           font-size: 17px;
           color: #F54C0B;
+          text-decoration:none;
+          span{
+            text-decoration: line-through;
+          }
         }
 
         h5 {
@@ -96,6 +108,8 @@
 
   }
 }
+
+
 
 @media (max-width: 1536px) {
   #detail-page .detail-page--desc2 {
@@ -328,10 +342,4 @@
     height: 200px;
   }
 }
-
-
-
-
-
-
 

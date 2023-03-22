@@ -4,8 +4,9 @@ import {NavLink} from "react-router-dom";
 import {BiUser} from "react-icons/bi";
 import Login from "../Sign-in/Login";
 import React from "react";
+import {useTranslation} from "react-i18next";
 const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
-
+    const {t, i18n} = useTranslation()
     return (
         <>
             <div id='burger' style={{
@@ -22,17 +23,20 @@ const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
                                 </div>
                                 <img src={logo} alt=""/>
                                 <hr/>
-                                <NavLink to={"/about"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
-                                    <p>Catalog</p>
+                                <NavLink to={"/"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
+                                    <p>{t("menu.catalog")}</p>
                                 </NavLink>
-                                <NavLink to={"/basket"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
-                                    <p>Payments</p>
+                                <NavLink to={"/payments"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
+                                    <p>{t("menu.Payments")}</p>
                                 </NavLink>
-                                <NavLink to={"/faq"} className="menu--link--faq" onClick={() => setBurger(!burger)}>
-                                    <p>Delivery</p>
+                                <NavLink to={"/delivery"} className="menu--link--faq" onClick={() => setBurger(!burger)}>
+                                    <p>{t("menu.Delivery")}</p>
                                 </NavLink>
-                                <NavLink to={"/faq"}  className="menu--link--faq" onClick={() => setBurger(!burger)}>
-                                    <p>Contacts</p>
+                                <NavLink to={"/basket"} className="menu--link--faq" onClick={() => setBurger(!burger)}>
+                                    <p>{t("menu.Basket")}</p>
+                                </NavLink>
+                                <NavLink to={"/contacts"}  className="menu--link--faq" onClick={() => setBurger(!burger)}>
+                                    <p>{t("menu.Contacts")}</p>
                                 </NavLink>
                             </div>
                         </div>
