@@ -9,6 +9,9 @@ import Loader from "../../../loader/Loader";
 const Autographed = () => {
   const [books,setBooks] = useState([])
   const [loader,setLoader] = useState(false)
+  window.scrollTo({
+    top:0
+  })
   const getBooks = async () => {
     try{
       setLoader(true)
@@ -20,6 +23,8 @@ const Autographed = () => {
       console.log(e,"Error")
     }
   }
+
+
   useEffect(()=> {
     getBooks()
   },[])

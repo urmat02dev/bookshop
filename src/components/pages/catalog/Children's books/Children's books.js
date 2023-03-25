@@ -9,6 +9,9 @@ import {useTranslation} from "react-i18next";
 const ChildrenSBooks = () => {
   const [books,setBooks] = useState([])
   const [loader,setLoader] = useState(false)
+  window.scrollTo({
+    top:0
+  })
   const {t} =useTranslation()
   const getBooks = async () => {
     try{

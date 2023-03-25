@@ -13,6 +13,7 @@ import {GET_BOOKS} from "../../redux/Reducer/ActionTypes";
 const MainPage = () => {
   const dispatch = useDispatch()
   const [book,setBook] = useState([])
+  const lang = localStorage.getItem("i18nextLng")
   const getBooks = async () => {
     try{
       const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
@@ -26,7 +27,7 @@ const MainPage = () => {
   useEffect(() => {
     getBooks()
     dispatch({type:GET_BOOKS,payload:[...book] })
-  },[])
+  },[lang])
   return (
     <div>
       <Hero/>
@@ -36,7 +37,6 @@ const MainPage = () => {
       <Genre/>
       <Comment/>
       <Bookstores/>
-
     </div>
   );
 };

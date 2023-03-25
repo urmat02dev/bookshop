@@ -9,11 +9,14 @@ import {useTranslation} from "react-i18next";
 const Sports = () => {
   const [books,setBooks] = useState([])
   const [loader,setLoader] = useState(false)
+  window.scrollTo({
+    top:0
+  })
   const {t} =useTranslation()
   const getBooks = async () => {
     try{
       setLoader(true)
-      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=889ee63c-94f0-4c52-b93a-dd742b990ba4')
+      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=5c852c1b-8278-436d-8fc6-ab0021053e40')
       const {data} = url
       await setBooks(data)
       setLoader(false)
@@ -61,7 +64,7 @@ const Sports = () => {
   return (
     <div id={"catalog"}>
       <div className="container">
-        <h1>{t("genre.p1")}</h1>
+        <h1>{t("genre.p10")}</h1>
         <div className={"catalog"}>
           {
             loader ? <div><Loader/></div> :

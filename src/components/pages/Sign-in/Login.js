@@ -18,14 +18,17 @@ const Login = () => {
         username: username,
         email:email,
         password:password,
-        password_confirm:password_confirm
     }
     localStorage.setItem("auth",JSON.stringify(tasks))
-    function getAuth () {
-        const auth = localStorage.getItem("auth")
+    async function getAuth () {
+        const url  = await axios.post('https://641d7d8a4366dd7def3f1b25.mockapi.io/Auth',{
+            username:username,
+            email:email,
+            password:password,
+        })
+
         setTasks([...tasks,newtTasks])
-        localStorage.setItem("auth",JSON.stringify(tasks))
-        console.log(auth)
+
     }
 
 
@@ -85,16 +88,13 @@ const Login = () => {
                         <div className="sign--regin2" >
                             <input type="password" placeholder='Create password' onChange={(e) => setPassword(e.target.value)}/>
                         </div>
-                        <div className="sign--regin3" >
-                            <input type="password" placeholder='Confirm	password' onChange={(e) => setPassword_confirm(e.target.value) }/>
-                        </div>
                         <div className="sign--password" >
                             <div className='sign--password__checkbox'>
                                 <input type="checkbox" onChange={(event) => setIsDone(!false)}/> <h5>I agree with privacy</h5>
                             </div>
                         </div>
                         <div className="sign--btn" >
-                            <button>{loader ? "Loader.. " : "LOGIN"}</button>
+                            <button onClick={()=> getAuth()}>{loader ? "Loader.. " : "LOGIN"}</button>
                         </div>
                         <div className="sign--read" >
                             <img src={read} alt=""/>
