@@ -1,17 +1,25 @@
 import React from 'react';
-
+import loader from "../../assets/img/animation_300_lfmdwpfp.gif"
 const Loader = () => {
   return (
     <div style={{
       background:"#F8F4E4",
       width:'100%',
       height:"100vh",
+      paddingTop:"50px"
     }}>
-      <svg  style={{margin: "auto", background:"#F8F4E4",  display: "block", shapeRendering: "auto"}} width="177px" height="250px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-        <circle cx="50" cy="50" fill="none" stroke="#1d3f72" strokeWidth="5" r="20" strokeDasharray="94.24777960769379 33.41592653589793">
-          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.8695652173913042s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+      <svg style={{margin: "auto", display: "block", shapeRendering: "auto",}} width="160px" height="184px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+        <circle cx="35" cy="50" fill="#e6261f" r="15">
+          <animate attributeName="cx" repeatCount="indefinite" dur="0.819672131147541s" keyTimes="0;0.5;1" values="35;65;35" begin="-0.4098360655737705s"></animate>
         </circle>
-      </svg>
+        <circle cx="65" cy="50" fill="#eb7532" r="15">
+          <animate attributeName="cx" repeatCount="indefinite" dur="0.819672131147541s" keyTimes="0;0.5;1" values="35;65;35" begin="0s"></animate>
+        </circle>
+        <circle cx="35" cy="50" fill="#e6261f" r="15">
+          <animate attributeName="cx" repeatCount="indefinite" dur="0.819672131147541s" keyTimes="0;0.5;1" values="35;65;35" begin="-0.4098360655737705s"></animate>
+          <animate attributeName="fill-opacity" values="0;0;1;1" calcMode="discrete" keyTimes="0;0.499;0.5;1" dur="0.819672131147541s" repeatCount="indefinite"></animate>
+        </circle>
+        </svg>
     </div>
   );
 };

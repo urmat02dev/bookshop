@@ -3,6 +3,7 @@ import "./Payments.scss"
 
 import {useTranslation} from "react-i18next";
 import {useSelector} from "react-redux";
+import Bookcard from "../bookcard/Bookcard";
 
 const Payments = () => {
     const {t,i18n} =useTranslation()
@@ -35,14 +36,13 @@ const Payments = () => {
                         </div>
                         <button>Continue</button>
 
-                        <div className="tittle3">
-                            <img src={basket.image} width="200px" alt=""/>
-                            <h1>{basket.name}</h1>
-                        </div>
-
                     </div>
                     <div className="book">
-
+                        {
+                            basket.map(el => (
+                              <Bookcard el={el}/>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

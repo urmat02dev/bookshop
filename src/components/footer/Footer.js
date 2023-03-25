@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-        <div className="footer--res"    >
+        <div className="footer--res">
             <hr/>
             <div className='footer--res__news'>
                 <p>©</p> <h5>{t("footer.finish")}</h5>

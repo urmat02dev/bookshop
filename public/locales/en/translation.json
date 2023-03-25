@@ -69,6 +69,7 @@
     "h2-3": "Publisher",
     "h2-2": "Publisher",
     "btn": "Order now",
+    "btnTwo": "Go to payment",
     "p": "Categories"
   },
   "header": {
@@ -96,11 +97,11 @@
     "Delivery": "Delivery",
     "Basket": "Basket",
     "Contacts": "Contacts"
+  },
+  "week": {
+    "title": "Bestsellers Of The Week",
+    "btn": "See all"
   }
 
 }
-
-
-
-
 

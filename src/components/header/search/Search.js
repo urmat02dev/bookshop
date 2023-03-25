@@ -11,36 +11,18 @@ import {useNavigate} from "react-router-dom";
 const Search = ({count}) => {
     const {t, i18n} = useTranslation()
   const dispatch = useDispatch()
-  const {input} = useSelector(state => state)
   const navigate = useNavigate()
-
-
 
   const getSubmit = (e) => {
     if (e.key === "Enter") {
       if (e.key !== "") {
         dispatch({type: GET_SEARCH, payload: e.target.value})
-        getSearch()
         e.target.value = ""
         navigate("/search-result")
       }
     }
   }
 
-  const getSearch = async () => {
-    try {
-      const url = await axios(`https://bookshopmotion.herokuapp.com/product/books/?search=${input}`)
-      const {data} = await url
-      dispatch({type:GET_RESULTS,payload:data})
-    } catch (e) {
-      console.log(e)
-
-    }
-  }
-
-  useEffect(() => {
-    getSearch()
-  },[])
     return (
       <div id='search'>
           <div className="container">

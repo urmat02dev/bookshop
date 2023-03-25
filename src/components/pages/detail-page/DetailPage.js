@@ -19,6 +19,9 @@ const DetailPage = () => {
   const {basket} = useSelector(state => state)
   const navigate = useNavigate()
   const lang = localStorage.getItem("i18nextLng")
+  window.scrollTo({
+    top:0
+  })
   const getDetail = async () => {
     try{
       setLoader(true)
@@ -94,11 +97,12 @@ const DetailPage = () => {
     }
   }
   useEffect(() => {
+
     getDetail()
     getAuthor()
     getCategory()
     getPublisher()
-  },[id,detail.author,detail.category, detail.publisher])
+  },[id,detail.author,detail.category, detail.publisher,])
   const {image, published_day,price,new_price} = detail
   const {t} =useTranslation()
 
@@ -134,7 +138,7 @@ const DetailPage = () => {
                       <h4><span>{price} </span> Com</h4>
                       <h5>{new_price} Com</h5>
                       <button className="btn" onClick={() => getBasket()}>
-                        {basket.length ? "Перейти в оплату" : t("detailPage.btn")}
+                        {basket.length ? t("detailPage.btnTwo") : t("detailPage.btn")}
                       </button>
                     </div>
 
