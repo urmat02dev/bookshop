@@ -33,3 +33,22 @@
     line-height: 21px;
   }
 }
+
+@media (max-width: 400px) {
+  .bookcard{
+    img{
+      width: 150px;
+    }
+    h4 {
+      text-align: start;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .bookcard{
+    img{
+      width: 130px;
+      height: 180px;
+    }
+  }
+}

@@ -34,7 +34,7 @@ const BookCard = ({el}) => {
     getLang()
     getAuthor()
 
-  },[])
+  },[el])
 
   return (
     <>

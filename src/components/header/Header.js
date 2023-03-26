@@ -47,6 +47,13 @@ const Header = () => {
                             <div className="header--menu__start1--close" onClick={() => setCount(false)} style={{
                                display: count ? "block" : "none"
                             }}></div>
+                            <div className="header--menu__start1--one">
+                                <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={lang}>
+                                    <option value={"en"}>EN</option>
+                                    <option value={"ru"}>RU</option>
+                                    <option value={"kg"}>KG</option>
+                                </select>
+                            </div>
                             <div className="header--menu__start1--search" onClick={() => setCount(true)}>
                                 <button> <BsSearch onClick={() => setCount(true)} className='icon'/></button>
                                 <div style={{
@@ -57,7 +64,9 @@ const Header = () => {
 
                             </div>
                             <div className="header--center__start1--basket">
-                                <SlBasket/>
+                                <NavLink to={'/payments'}>
+                                    <SlBasket/>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

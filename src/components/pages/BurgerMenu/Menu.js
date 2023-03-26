@@ -5,7 +5,7 @@ import {BiUser} from "react-icons/bi";
 import Login from "../Sign-in/Login";
 import React from "react";
 import {useTranslation} from "react-i18next";
-const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
+const BurgerMenu = ({burger, setBurger, menu, setMenu,}) =>     {
     const {t, i18n} = useTranslation()
     return (
         <>
@@ -21,9 +21,11 @@ const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
                                 }}>
                                     &times;
                                 </div>
-                                <img src={logo} alt=""/>
+                                <NavLink to={'/'}>
+                                    <img src={logo} alt=""/>
+                                </NavLink>
                                 <hr/>
-                                <NavLink to={"/"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
+                                <NavLink to={"/catalog"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
                                     <p>{t("menu.catalog")}</p>
                                 </NavLink>
                                 <NavLink to={"/payments"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
