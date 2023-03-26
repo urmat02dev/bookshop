@@ -7,11 +7,13 @@ import Bookcard from "../../pages/bookcard/Bookcard";
 import {GET_LOADER} from "../../../redux/Reducer/ActionTypes";
 import {useDispatch} from "react-redux";
 import Loader from "../../loader/Loader";
+import {useTranslation} from "react-i18next";
+import Modal from "../../pages/modal/Modal";
 
 const Week = () => {
   const [books,setBooks] = useState([])
-  const lang = localStorage.getItem("i18nextLng")
   const [loader,setLoader] = useState(false)
+  const [modal , setModal] = useState(false)
    const getBooks = async () => {
      try{
        setLoader(true)
@@ -31,8 +33,6 @@ const Week = () => {
    useEffect(()=> {
      getBooks()
    },[])
-
-
   let settings = {
     dots: true,
     infinite: false,
@@ -67,26 +67,29 @@ const Week = () => {
       }
     ]
   };
+  const {t} =  useTranslation()
   return (
 
     <div id={"week"}>
     <div className="container">
       <div className={"week--title"}>
-        <h1>Bestsellers Of The Week</h1>
-        <button>See all</button>
+        <h1>{t("week.title")}</h1>
+        <button onClick={() => setModal(!modal)}> {t("week.btn")}</button>
       </div>
       {
-        loader ? <Loader/> :
-          <div className="week">
-            <Slider {...settings}>
-              {
-                books.map(el=> {
-                  return <Bookcard el={el} key={el.id} />
-                } )
-              }
-            </Slider>
-          </div>
+        modal ? <Modal modal={modal} setModal={setModal}/>
+          : loader ? <Loader/> :
+            <div className="week">
+              <Slider {...settings}>
+                {
+                  books.map(el=> {
+                    return <Bookcard el={el} key={el.id} />
+                  } )
+                }
+              </Slider>
+            </div>
       }
+
     </div>
     </div>
   );

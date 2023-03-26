@@ -18,6 +18,8 @@ import Pedagogy from "./components/pages/catalog/Pedagogy/Pedagogy";
 import SelfDevelopment from "./components/pages/catalog/Self-development/Self-development";
 import Publicism from "./components/pages/catalog/Publicism/Publicism";
 import Result from "./components/pages/result/Result";
+import RegisterForm from "./components/pages/sign-up/RegisterForm";
+import LoginForm from "./components/pages/sign-up/LoginForm";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/contacts" element={<Contacts/>}/>
         <Route path="/delivery" element={<Delivery/>}/>
         <Route path="/payments" element={<Payments/>}/>
+        <Route path="/login" element={<LoginForm/>}/>
+        <Route path="/sign-up" element={<RegisterForm/>}/>
         <Route path="/search" element={<Search/>}/>
         <Route path={"/detail-page/:id"} element={<DetailPage/>}/>
       </Routes>

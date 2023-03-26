@@ -39,7 +39,7 @@
   "genre": {
     "h1": "Genre",
     "btn": "See all",
-    "p1": "Autographed books",
+    "p1": "Autobiographical books",
     "p2": "Fantasy",
     "p3": "Children's books",
     "p4": "Business literature",
@@ -69,6 +69,7 @@
     "h2-3": "Publisher",
     "h2-2": "Publisher",
     "btn": "Order now",
+    "btnTwo": "Go to payment",
     "p": "Categories"
   },
   "header": {
@@ -80,7 +81,8 @@
     "search": "Search"
   },
   "search": {
-    "placeholder": "Enter the text"
+    "placeholder": "Enter the text",
+    "not-books": "There is no such book"
   },
   "footer": {
     "pp": "The managing director & cluster head in Kyrgyz Republic at Bishkek City.",
@@ -96,11 +98,11 @@
     "Delivery": "Delivery",
     "Basket": "Basket",
     "Contacts": "Contacts"
+  },
+  "week": {
+    "title": "Bestsellers Of The Week",
+    "btn": "See all"
   }
 
 }
-
-
-
-
 

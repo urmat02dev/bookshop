@@ -5,12 +5,13 @@ import axios from "axios";
 import "./Autographed.scss"
 import {useTranslation} from "react-i18next";
 import Loader from "../../../loader/Loader";
-import {useDispatch, useSelector} from "react-redux";
-import {GET_LOADER} from "../../../../redux/Reducer/ActionTypes";
 
 const Autographed = () => {
   const [books,setBooks] = useState([])
   const [loader,setLoader] = useState(false)
+  window.scrollTo({
+    top:0
+  })
   const getBooks = async () => {
     try{
       setLoader(true)
@@ -22,10 +23,11 @@ const Autographed = () => {
       console.log(e,"Error")
     }
   }
+
+
   useEffect(()=> {
     getBooks()
   },[])
-  console.log(loader)
   let settings = {
     dots: true,
     infinite: false,

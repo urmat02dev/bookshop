@@ -9,12 +9,8 @@ import {
 
 import {AiFillInstagram} from "react-icons/ai";
 import {MdEmail} from "react-icons/md";
-import {FaLocationArrow} from "react-icons/fa";
-import {useNavigate} from "react-router-dom";
-
 
 const Contacts = () => {
-
 
     return (
         <div className="container">
@@ -74,9 +70,7 @@ const Contacts = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-            
         </div>
     );
 };

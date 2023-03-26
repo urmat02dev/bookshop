@@ -4,50 +4,47 @@ import logo from '../../../assets/img/logo.svg'
 import read from '../../../assets/img/image 18.png'
 import axios from "axios";
 import {useTranslation} from "react-i18next";
+import {useDispatch, useSelector} from "react-redux";
+import {GET_LOGIN} from "../../../redux/Reducer/ActionTypes";
 const Login = () => {
     const [index, setIndex] = useState(1)
     const [username, setUsername] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [login, setLogin] = useState([])
     const [password_confirm, setPassword_confirm] = useState("")
     const [isDone, setIsDone] = useState("")
     const [tasks, setTasks] = useState([])
     const [loader, setLoader] = useState(false)
     const {t, i18n} = useTranslation()
-
+    const dispatch = useDispatch()
     const newtTasks = {
         username: username,
         email:email,
         password:password,
-        password_confirm:password_confirm
     }
-
-
-
-    const getValue = async () => {
-        setLoader(true)
-        const url = await axios.post("https://bookshopmotion.herokuapp.com/accounts/register/",{
-            username: username,
-            email: email,
-            password: password,
-            password_confirm: password_confirm
+    localStorage.setItem("auth",JSON.stringify(tasks))
+    async function getAuth () {
+        const url  = await axios.post('https://641d7d8a4366dd7def3f1b25.mockapi.io/Auth',{
+            username:username,
+            email:email,
+            password:password,
         })
-        setLoader(false)
-        console.log(url)
+
+        setTasks([...tasks,newtTasks])
+
     }
     const getLogin = async () => {
-        setLoader(true)
-        const url = await axios.get("https://bookshopmotion.herokuapp.com/accounts/login/",{
-            password: password,
-            email: email,
-        })
-        setLoader(false)
-        console.log(url)
+        const url  = await axios.get('https://641d7d8a4366dd7def3f1b25.mockapi.io/Auth/1')
+        const {data} = await url
+        dispatch({type:GET_LOGIN, payload:data})
     }
-    useEffect(() => {
-        setTasks([...tasks,newtTasks])
-    },[])
 
+
+    useEffect(() => {
+        getLogin()
+    },[])
+    console.log(login)
     return (
         <div id='login'>
             <div className="container">
@@ -81,7 +78,7 @@ const Login = () => {
                         </div>
                         <div className="login--login--btns">
 
-                            <button className={"btns"} onClick={() => getLogin()}>LOGIN</button>
+                            <button className={"btns"} onClick={() => getAuth()}>LOGIN</button>
 
                             <button className={"btns"}>{t("sign in.login")}</button>
 
@@ -100,16 +97,13 @@ const Login = () => {
                         <div className="sign--regin2" >
                             <input type="password" placeholder='Create password' onChange={(e) => setPassword(e.target.value)}/>
                         </div>
-                        <div className="sign--regin3" >
-                            <input type="password" placeholder='Confirm	password' onChange={(e) => setPassword_confirm(e.target.value) }/>
-                        </div>
                         <div className="sign--password" >
                             <div className='sign--password__checkbox'>
                                 <input type="checkbox" onChange={(event) => setIsDone(!false)}/> <h5>I agree with privacy</h5>
                             </div>
                         </div>
-                        <div className="sign--btn" onClick={() => getValue()}>
-                            <button>{loader ? "Loader.. " : "LOGIN"}</button>
+                        <div className="sign--btn" >
+                            <button onClick={()=> getAuth()}>{loader ? "Loader.. " : "LOGIN"}</button>
                         </div>
                         <div className="sign--read" >
                             <img src={read} alt=""/>

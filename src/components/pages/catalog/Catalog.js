@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./Catalog.scss"
 import Autographed from "./Autographed/Autographed";
 import BusinessLiterature from "./Business literature/Business literature";
-import ChildrenSBooks from "./Children\'s books/Children\'s books";
+import ChildrenSBooks from "./Children's books/Children's books";
 import Fantasy from "./Fantasy/Fantasy";
 import HobbiesAndLeisure from "./Hobbies and leisure/Hobbies and leisure";
 import Pedagogy from "./Pedagogy/Pedagogy";
@@ -12,19 +12,24 @@ import SelfDevelopment from "./Self-development/Self-development";
 import Sports from "./Sports/Sports";
 import Loader from "../../loader/Loader";
 const Catalog = () => {
+const windowUp = () => {
+  window.scrollTo({
+    top:10
+  })
+}
 
+  useEffect(() => {
+  },[windowUp])
   return (
     <div>
-
       <Autographed/>
       <Fantasy/>
-      <BusinessLiterature/>
       <ChildrenSBooks/>
-
+      <BusinessLiterature/>
       <HobbiesAndLeisure/>
-      <Pedagogy/>
-      <Publicism/>
       <Religion/>
+      <Publicism/>
+      <Pedagogy/>
       <SelfDevelopment/>
       <Sports/>
     </div>

@@ -3,13 +3,23 @@ import axios from "axios";
 import Slider from "react-slick";
 import Bookcard from "../../bookcard/Bookcard";
 import "./Publicism.scss"
+import Loader from "../../../loader/Loader";
+import {useTranslation} from "react-i18next";
+
 const Publicism = () => {
   const [books,setBooks] = useState([])
+  const [loader,setLoader] = useState(false)
+  window.scrollTo({
+    top:0
+  })
+  const {t} =useTranslation()
   const getBooks = async () => {
     try{
-      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/')
+      setLoader(true)
+      const url  = await axios('https://bookshopmotion.herokuapp.com/product/books/?category=232f3551-99cd-457f-8651-ab92ec6e464c')
       const {data} = url
       await setBooks(data)
+      setLoader(false)
     }catch (e){
       console.log(e,"Error")
     }
@@ -52,16 +62,25 @@ const Publicism = () => {
     ]
   };
   return (
-    <div>
-      <Slider {...settings}>
-        {
-          books.map(el=> {
+    <div id={"catalog"}>
+      <div className="container">
+        <h1>{t("genre.p7")}</h1>
+        <div className={"catalog"}>
+          {
+            loader ? <div><Loader/></div> :
+              <Slider {...settings}>
+                {
+                  books.map(el=> {
+                    return  <Bookcard el={el}
+                                      key={el.id}
+                    />
+                  } )
+                }
+              </Slider>
 
-            return <Bookcard el={el} key={el.id}/>
-
-          } )
-        }
-      </Slider>
+          }
+        </div>
+      </div>
     </div>
   );
 };
