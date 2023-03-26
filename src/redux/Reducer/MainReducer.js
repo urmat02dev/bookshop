@@ -1,7 +1,6 @@
 import {
   GET_BASKET,
-  GET_BOOKS,
-  GET_RESULTS,
+  GET_BOOKS, GET_LOGIN,
   GET_SEARCH
 } from "./ActionTypes";
 
@@ -11,6 +10,7 @@ const initialState ={
     input : "",
     results:[],
     auth:[],
+    user:{}
 
 }
 
@@ -20,13 +20,15 @@ export const MainReducer = (state = initialState, action) => {
         return {...state, books: action.payload}
     }
     case GET_BASKET :{
-      return {...state, basket: [...state.basket,action.payload]}
+      return {...state, basket: [action.payload]}
     }
     case GET_SEARCH :{
       return {...state, input: action.payload}
     }
-    case GET_RESULTS :{
-      return {...state, results: action.payload}
+    case GET_LOGIN : {
+      return {
+        ...state, user: action.payload
+      }
     }
 
 

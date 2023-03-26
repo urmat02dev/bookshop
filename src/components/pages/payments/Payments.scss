@@ -60,11 +60,17 @@
     }
 
     .book {
-      position: absolute;
-      top: 270px;
-      left: 880px;
       border: 2px solid #D9D9D9;
       padding: 170px 160px;
+      .basket{
+        img{
+          width: 100px;
+          height: 150px;
+        }
+        p{
+          color: red;
+        }
+      }
     }
   }
 }

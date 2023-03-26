@@ -8,6 +8,18 @@ import Bookcard from "../bookcard/Bookcard";
 const Payments = () => {
     const {t,i18n} =useTranslation()
     const {basket} = useSelector(s => s)
+    function getLang (el) {
+        const lang = localStorage.getItem("i18nextLng")
+        if (lang === "en"){
+            return <p>{el.name_en}</p>
+        }
+        if (lang === "ru"){
+            return <p>{el.name}</p>
+        }
+        if (lang === "kg"){
+            return <p>{el.name_ky}</p>
+        }
+    }
     console.log(basket)
     return (
         <div id="pay">
@@ -40,7 +52,10 @@ const Payments = () => {
                     <div className="book">
                         {
                             basket.map(el => (
-                              <Bookcard el={el}/>
+                              <div className={"basket"}>
+                                  <img src={el.image} alt=""/>
+                                  <p>{getLang(el)}</p>
+                              </div>
                             ))
                         }
                     </div>
