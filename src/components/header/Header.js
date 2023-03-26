@@ -9,6 +9,7 @@ import {BiUser} from "react-icons/bi";
 import Login from "../pages/Sign-in/Login";
 import Menu from "../pages/BurgerMenu/Menu";
 import {SlBasket} from "react-icons/sl";
+import {useSelector} from "react-redux";
 
 
 
@@ -19,7 +20,8 @@ const Header = () => {
     const [regin, setRegin] = useState(false)
     const [menu, setMenu] = useState(false)
     const lang = localStorage.getItem("i18nextLng")
-
+    const {user} = useSelector(s => s)
+    console.log(user)
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
@@ -50,7 +52,7 @@ const Header = () => {
                                 <div style={{
                                     display: count ? 'block' : 'none'
                                 }}>
-                                    <Search/>
+                                    <Search count={count} setCount={setCount}/>
                                 </div>
 
                             </div>
@@ -75,7 +77,7 @@ const Header = () => {
                             <div style={{
                                 display: count ? 'block' : 'none'
                             }}>
-                                <Search/>
+                                <Search count={count} setCount={setCount}/>
                             </div>
 
                         </div>
@@ -99,7 +101,12 @@ const Header = () => {
                                  }}>
                             </div>
                             <div className="header--center__end--user">
-                                <button onClick={() => setRegin(true)}><BiUser/></button>
+                                <button onClick={() => setRegin(true)}>
+                                    {
+                                        user ? user.username :
+                                          <BiUser/>
+                                    }
+                                </button>
                                 <div style={{
                                     display: regin ? 'block' : 'none'
                                 }}>

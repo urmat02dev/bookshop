@@ -4,16 +4,20 @@ import logo from '../../../assets/img/logo.svg'
 import read from '../../../assets/img/image 18.png'
 import axios from "axios";
 import {useTranslation} from "react-i18next";
+import {useDispatch, useSelector} from "react-redux";
+import {GET_LOGIN} from "../../../redux/Reducer/ActionTypes";
 const Login = () => {
     const [index, setIndex] = useState(1)
     const [username, setUsername] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [login, setLogin] = useState([])
     const [password_confirm, setPassword_confirm] = useState("")
     const [isDone, setIsDone] = useState("")
     const [tasks, setTasks] = useState([])
     const [loader, setLoader] = useState(false)
     const {t, i18n} = useTranslation()
+    const dispatch = useDispatch()
     const newtTasks = {
         username: username,
         email:email,
@@ -30,12 +34,17 @@ const Login = () => {
         setTasks([...tasks,newtTasks])
 
     }
+    const getLogin = async () => {
+        const url  = await axios.get('https://641d7d8a4366dd7def3f1b25.mockapi.io/Auth/1')
+        const {data} = await url
+        dispatch({type:GET_LOGIN, payload:data})
+    }
 
 
     useEffect(() => {
-
+        getLogin()
     },[])
-
+    console.log(login)
     return (
         <div id='login'>
             <div className="container">

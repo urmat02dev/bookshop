@@ -81,7 +81,8 @@
     "search": "Search"
   },
   "search": {
-    "placeholder": "Enter the text"
+    "placeholder": "Enter the text",
+    "not-books": "There is no such book"
   },
   "footer": {
     "pp": "The managing director & cluster head in Kyrgyz Republic at Bishkek City.",

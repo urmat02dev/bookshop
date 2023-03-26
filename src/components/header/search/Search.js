@@ -8,15 +8,16 @@ import {GET_RESULTS, GET_SEARCH} from "../../../redux/Reducer/ActionTypes";
 
 import {useNavigate} from "react-router-dom";
 
-const Search = ({count}) => {
+const Search = ({count,setCount}) => {
     const {t, i18n} = useTranslation()
   const dispatch = useDispatch()
   const navigate = useNavigate()
-
+  console.log(count)
   const getSubmit = (e) => {
     if (e.key === "Enter") {
-      if (e.key !== "") {
+      if (e.target.value !== "") {
         dispatch({type: GET_SEARCH, payload: e.target.value})
+        setCount(!count)
         e.target.value = ""
         navigate("/search-result")
       }
@@ -24,20 +25,24 @@ const Search = ({count}) => {
   }
 
     return (
-      <div id='search'>
-          <div className="container">
-              <div className="search">
-                  <div className='search--div'>
+      <>
+        <div id='search'>
+                <div className="container">
+                  <div className="search">
+                    <div className='search--div'>
                       <input type="text" placeholder={t('search.placeholder')}
                              onKeyPress={(e) => getSubmit(e)}
                       />
                       <CiSearch className='search--div--icon'/>
-                  </div>
-                  <div className='search--block'></div>
+                    </div>
+                    <div className='search--block'></div>
 
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
+
+      </>
+
   );
 };
 
