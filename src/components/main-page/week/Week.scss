@@ -2,7 +2,7 @@
 #week{
   background: #F8F4E4;
   .week{
-    padding: 80px 0;
+    padding: 80px 0 80px 20px;
     .slick-prev:before,
     .slick-next:before{
       color: black;
@@ -28,5 +28,14 @@
         border: none;
       }
     }
+  }
+}
+
+@media (max-width: 1536px) {
+  .slick-slide img {
+    #week .week--title h1 {
+      padding: 0 0 0 70px;
+    }
+
   }
 }
