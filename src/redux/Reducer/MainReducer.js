@@ -10,7 +10,13 @@ const initialState ={
     input : "",
     results:[],
     auth:[],
-    user:{}
+    user:{
+      username:null,
+      email:null,
+      password:null
+    },
+
+
 
 }
 

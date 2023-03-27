@@ -1,4 +1,4 @@
-#login{
+#auth{
   position: fixed;
   left: 31%;
   top: 4%;
@@ -7,7 +7,7 @@
   animation: login 1s forwards;
   width: 480px;
   z-index: 99;
-  .login {
+  .auth{
     position: relative;
     width: 100%;
     height: 550px;
@@ -289,9 +289,8 @@
     }
 
   }
-
   .active{
-    border-bottom: 2px solid #161718;
+    border-bottom: 2px solid red;
   }
 }
 @keyframes login {
