@@ -21,9 +21,11 @@ const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
                                 }}>
                                     &times;
                                 </div>
-                                <img src={logo} alt=""/>
+                                <NavLink to={'/'}>
+                                    <img src={logo} alt=""/>
+                                </NavLink>
                                 <hr/>
-                                <NavLink to={"/"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
+                                <NavLink to={"/catalog"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
                                     <p>{t("menu.catalog")}</p>
                                 </NavLink>
                                 <NavLink to={"/payments"} className="menu--menu__about" onClick={() => setBurger(!burger)}>
@@ -31,9 +33,6 @@ const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
                                 </NavLink>
                                 <NavLink to={"/delivery"} className="menu--link--faq" onClick={() => setBurger(!burger)}>
                                     <p>{t("menu.Delivery")}</p>
-                                </NavLink>
-                                <NavLink to={"/basket"} className="menu--link--faq" onClick={() => setBurger(!burger)}>
-                                    <p>{t("menu.Basket")}</p>
                                 </NavLink>
                                 <NavLink to={"/contacts"}  className="menu--link--faq" onClick={() => setBurger(!burger)}>
                                     <p>{t("menu.Contacts")}</p>

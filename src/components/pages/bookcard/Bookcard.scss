@@ -34,3 +34,11 @@
   }
 }
 
+@media (max-width: 320px) {
+  .bookcard{
+    img{
+      width: 120px;
+      height: 160px;
+    }
+  }
+}
