@@ -32,33 +32,70 @@ const Publicism = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 7,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 200,
+        breakpoint: 1025,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 3,
-          infinite: true,
+          infinite: false,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots: true
         }
-      }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
+      },
     ]
   };
   return (
