@@ -9,7 +9,6 @@
 
 }
 #modal{
-  left: 50px;
   width: 90%;
   height: 94%;
   background: #F8F4E4;
@@ -41,6 +40,9 @@
     margin: 11px 0 7px 35px;
     padding: 30px 0;
   }
+  #modal  {
+  margin-left: 20px;
+  }
 
 }
 
@@ -55,6 +57,9 @@
   #modal .modal {
     margin: 11px 0 7px 80px;
   }
+  #modal  {
+   margin-right: 20px;
+  }
 
 }
 
@@ -62,7 +67,9 @@
   #modal .modal {
     margin: 11px 0 7px 60px;
   }
-
+  #modal  {
+  margin: 0 15px 0 0;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -90,10 +97,12 @@
   #modal .modal {
     margin: 11px 0 7px 85px;
   }
-
 }
 
 @media (max-width: 576px) {
+  #modal{
+    left: 25px;
+  }
   #modal .modal {
     margin: 11px 0 7px 25px;
   }

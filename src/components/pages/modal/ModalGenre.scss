@@ -134,6 +134,9 @@
 }
 
 @media (max-width: 576px) {
+  #modal{
+    left: 25px;
+  }
   #modal .genre--img {
     margin: 20px;
   }
@@ -147,7 +150,7 @@
 
 @media (max-width: 450px) {
   #modal {
-    left: 81px;
+    left: 25px;
   }
   #genre .genre--img {
     right: 59px;
@@ -234,6 +237,9 @@
 }
 
 @media (max-width: 400px) {
+  #modal {
+    left: 20px;
+  }
   #genre .genre--img--one img {
     padding: 20px 0 20px 20px;
     width: 92%;
@@ -304,6 +310,9 @@
 }
 
 @media (max-width: 380px) {
+  #modal {
+    left:15px;
+  }
   #genre .genre--img--one img {
     padding: 20px 0 20px 10px;
     width: 92%;
@@ -344,9 +353,6 @@
     padding: 20px 0 20px 10px;
     width: 90%;
   }
-  #modal {
-    left: 76px;
-  }
   #genre .genre--img--one p {
     padding: 0 0 0 90px;
   }
@@ -376,7 +382,7 @@
     width: 88%;
   }
   #modal {
-    left: 76px;
+    left:15px;
   }
   #genre .genre--img--one p {
     padding: 0 0 0 78px;
@@ -424,7 +430,7 @@
     width: 88%;
   }
   #modal {
-    left: 76px;
+    left:15px;
   }
   #genre .genre--img--one p {
     padding: 0 0 0 78px;
