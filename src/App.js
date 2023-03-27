@@ -20,10 +20,13 @@ import Publicism from "./components/pages/catalog/Publicism/Publicism";
 import Result from "./components/pages/result/Result";
 import RegisterForm from "./components/pages/sign-up/RegisterForm";
 import LoginForm from "./components/pages/sign-up/LoginForm";
+import LocalStoroge from "./components/pages/sign-up/LocalStotoge";
+import {Form} from "./components/pages/firebase/Form";
 
 function App() {
   return (
     <>
+      <Form/>
       <Routes>
         <Route path="/" element={<MainPage/>}/>
         <Route path="/search-result" element={<Result/>}/>

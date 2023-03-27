@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Header.scss"
 import logo from "../../assets/img/logo.svg"
 import {NavLink} from "react-router-dom";
@@ -6,7 +6,7 @@ import {BsSearch} from "react-icons/bs";
 import {useTranslation} from "react-i18next";
 import Search from "./search/Search";
 import {BiUser} from "react-icons/bi";
-import Login from "../pages/Sign-in/Login";
+import Auth from "../pages/auth/Auth";
 import Menu from "../pages/BurgerMenu/Menu";
 import {SlBasket} from "react-icons/sl";
 import {useSelector} from "react-redux";
@@ -21,10 +21,14 @@ const Header = () => {
     const [menu, setMenu] = useState(false)
     const lang = localStorage.getItem("i18nextLng")
     const {user} = useSelector(s => s)
-    console.log(user)
+    const auth = JSON.parse(localStorage.getItem("auth"))
+    console.log(auth)
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
+    useEffect(() => {
+
+    },[auth])
     return (
         <div id='header'>
             <div className="container">
@@ -102,15 +106,12 @@ const Header = () => {
                             </div>
                             <div className="header--center__end--user">
                                 <button onClick={() => setRegin(true)}>
-                                    {
-                                        user ? user.username :
-                                          <BiUser/>
-                                    }
+                                          <BiUser className={"user-icon"}/>
                                 </button>
                                 <div style={{
                                     display: regin ? 'block' : 'none'
                                 }}>
-                                    <Login/>
+                                    <Auth/>
                                 </div>
                             </div>
                         </div>
