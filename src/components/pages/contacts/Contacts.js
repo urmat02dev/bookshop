@@ -13,7 +13,6 @@ import {MdEmail} from "react-icons/md";
 const Contacts = () => {
 
     return (
-        <div className="container">
             <div id='contacts'>
                 <div className="container">
                     <div className="contacts">
@@ -71,7 +70,7 @@ const Contacts = () => {
                     </div>
                 </div>
             </div>
-        </div>
+
     );
 };
 
