@@ -37,6 +37,15 @@ const Autographed = () => {
     initialSlide: 0,
     responsive: [
       {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
         breakpoint: 1025,
         settings: {
           slidesToShow: 5,
@@ -82,7 +91,7 @@ const Autographed = () => {
       {
         breakpoint: 376,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
           dots: false
@@ -91,7 +100,7 @@ const Autographed = () => {
       {
         breakpoint: 320,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
           dots: false

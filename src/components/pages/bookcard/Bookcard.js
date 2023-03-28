@@ -42,13 +42,15 @@ const BookCard = ({el}) => {
             <NavLink to={`/detail-page/${el.id}`}>
               <img src={el.image}  alt="img"/>
             </NavLink>
-            {
-              getLang(el)
-            }
-            <h4>{author.first_name} </h4>
-            <h4>{author.last_name}</h4>
-            <h3>{el.price} c.</h3>
-            <h5>{el.new_price} c.</h5>
+            <div>
+              {
+                getLang(el)
+              }
+              <h4>{author.first_name} </h4>
+              <h4>{author.last_name}</h4>
+              <h3>{el.price} c.</h3>
+              <h5>{el.new_price} c.</h5>
+            </div>
           </div>
     </>
   );

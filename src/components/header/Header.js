@@ -60,9 +60,13 @@ const Header = () => {
                                 </div>
 
                             </div>
-                            <div className="header--center__start1--basket">
-                                <SlBasket/>
-                            </div>
+                                <div className="header--center__end--one">
+                                    <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={lang}>
+                                        <option value={"en"}>EN</option>
+                                        <option value={"ru"}>RU</option>
+                                        <option value={"kg"}>KG</option>
+                                    </select>
+                                </div>
                         </div>
                     </div>
 

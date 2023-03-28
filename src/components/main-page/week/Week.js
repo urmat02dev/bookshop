@@ -4,6 +4,8 @@ import axios from "axios";
 
 import Slider from "react-slick"
 import Bookcard from "../../pages/bookcard/Bookcard";
+import {GET_LOADER} from "../../../redux/Reducer/ActionTypes";
+import {useDispatch} from "react-redux";
 import Loader from "../../loader/Loader";
 import {useTranslation} from "react-i18next";
 import Modal from "../../pages/modal/Modal";
@@ -20,7 +22,6 @@ const Week = () => {
        await setBooks(data)
        setLoader(false)
      }catch (e){
-
        console.log(e,"Error")
      }
    }

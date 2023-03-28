@@ -34,11 +34,36 @@
   }
 }
 
+@media (max-width: 376px) {
+  .bookcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    img{
+      width: 170px;
+      height: 230px;
+    }
+    div {
+      width: 170px;
+      text-align: left;
+    }
+  }
+}
+
 @media (max-width: 320px) {
   .bookcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     img{
-      width: 120px;
-      height: 160px;
+      width: 170px;
+      height: 230px;
+    }
+    div {
+      width: 170px;
+      text-align: left;
     }
   }
 }
