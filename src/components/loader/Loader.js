@@ -1,5 +1,4 @@
 import React from 'react';
-import loader from "../../assets/img/animation_300_lfmdwpfp.gif"
 const Loader = () => {
   return (
     <div style={{

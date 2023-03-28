@@ -6,7 +6,7 @@ import {
 
 const initialState ={
     books:[],
-    basket:[],
+    basket:JSON.parse(localStorage.getItem("basket")) || [],
     input : "",
     results:[],
     auth:[],
@@ -26,7 +26,13 @@ export const MainReducer = (state = initialState, action) => {
         return {...state, books: action.payload}
     }
     case GET_BASKET :{
-      return {...state, basket: [action.payload]}
+      const foundProduct = state.basket.find(el => el.id === action.payload.id)
+      if (foundProduct) {
+        return{...state, basket: state.basket.map(el => el.id === foundProduct.id ?
+            {...el, quantity: el.quantity + 1 , size:el.size, color:el.color} : el)}
+      } else {
+        return {...state, basket: [...state.basket, {...action.payload, quantity: 1, size:"", color:"" }]}
+      }
     }
     case GET_SEARCH :{
       return {...state, input: action.payload}
