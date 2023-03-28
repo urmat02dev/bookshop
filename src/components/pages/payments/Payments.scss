@@ -12,7 +12,6 @@
       margin: 0 30px;
       border: 2px solid #D9D9D9;
       padding: 50px 50px 50px 100px;
-
       .check {
         display: flex;
         align-items: center;
@@ -61,7 +60,8 @@
 
     .book {
       border: 2px solid #D9D9D9;
-   width:1%;
+   width:5px;
+      height: 10px;
       .basket{
         img{
           width: 100px;
@@ -158,7 +158,7 @@
     width: 45%;
   }
   #pay .pay .book {
-    left: 580px;
+    left: 600px;
   }
 
 }
@@ -237,6 +237,17 @@
     position: relative;
     right: 10px;
   }
+  #pay .pay .card {
+    width: 45%;
+    position: relative;
+    left: 107px;
+  }
+  #pay .pay .book {
+    padding: 120px 108px;
+    position: relative;
+    left: 152px;
+    top: 20px;
+  }
 
 }
 
@@ -284,7 +295,7 @@
     top: -10px;
   }
   #pay .pay .book {
-    left: 60px;
+    left: 77px;
     top: 75%;
     padding: 90px 100px;
   }
