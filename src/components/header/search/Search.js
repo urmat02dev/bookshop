@@ -12,7 +12,6 @@ const Search = ({count,setCount}) => {
     const {t, i18n} = useTranslation()
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  console.log(count)
   const getSubmit = (e) => {
     if (e.key === "Enter") {
       if (e.target.value !== "") {

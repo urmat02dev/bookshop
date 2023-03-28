@@ -5,7 +5,7 @@ import App from './App';
 import Layout from "./components/layout/Layout";
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
-import {store} from "./redux/Reducer";
+import {store} from "./redux";
 import "./18n"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
