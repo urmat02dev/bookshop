@@ -21,7 +21,7 @@ const BurgerMenu = ({burger, setBurger, menu, setMenu,}) => {
                                 }}>
                                     &times;
                                 </div>
-                                <NavLink to={'/'}>
+                                <NavLink to={'/'} onClick={() => setBurger(!burger)}>
                                     <img src={logo} alt=""/>
                                 </NavLink>
                                 <hr/>
